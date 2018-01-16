@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nuri Nori](https://up.htmlacademy.ru/adaptive/13/user/96216).
-* Наставник: [Ксения Торкова] (https://up.htmlacademy.ru/adaptive/13/user/23249).
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/adaptive/13/user/23249).
 
 ---
 
