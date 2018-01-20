@@ -132,22 +132,46 @@
                 <label class="list-name__label" for="name-client">
                   Имя:
                 </label>
-                <input type="text" name="name-client" placeholder="Введите ваше имя" required>
+                <input type="text" id="name-client" placeholder="Введите ваше имя" required>
               </li>
               <li class="list-name__item">
                 <label class="list-name__label" for="surname-client">
                   Фамилия:
                 </label>
-                <input type="text" name="surname-client" placeholder="Укажите фамилию" required>
+                <input type="text" id="surname-client" placeholder="Укажите фамилию" required>
               </li>
               <li class="list-name__item">
                 <label class="list-name__label" for="patronymic-client">
                   Отчество:
                 </label>
-                <input type="text" name="patronymic-client" placeholder="Отчество, если желаете">
+                <input type="text" id="patronymic-client" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
+          <fieldset class="filters-list__tel form-tel">
+            <label class="form-tel__label legend-title" for="tel-client">
+              Тел
+            </label>
+            <input type="tel" id="tel-client" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ" required>
+          </fieldset>
+          <fieldset class="filters-list__email form-email">
+            <label class="form-email__label legend-title" for="email-client">
+              E-mail
+            </label>
+            <input type="email" id="email-client" placeholder="Ваш Email" required>
+          </fieldset>
+          <fieldset class="filters-list__order-wishes form-order-wishes">
+            <label class="form-order-wishes__legend legend-title" for="text-order-wishes">
+              Доп
+            </label>
+            <textarea id="text-order-wishes">
+              Опишите все ваши пожелания к заказу
+            </textarea>
+          </fieldset>
+          <span class="form-order__notes">
+            Поля обязательны для заполнения
+          </span>
+          <input class="button" type="submit" value="Отправить заказ">
         </form>
       </section>
     </main>
