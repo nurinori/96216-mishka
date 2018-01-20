@@ -48,6 +48,34 @@
       </nav>
     </header>
     <main class="page-main">
+      <section class="form-order">
+        <p class="form-order__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="form-order__filters filters-list" method="get" action="https://echo.htmlacademy.ru" name="form-get">
+          <fieldset class="filters-list__radio form-radio">
+            <legend class="form-radio__legend legend-title">
+              Тип
+            </legend>
+            <ul class="form-radio__list list-radio">
+              <li class="list-radio__item">
+                <label class="list-radio__label" for="interior-stuff">
+                  Аксессуар для интерьера
+                </label>
+                <input class="visually-hidden" type="radio" value="interior-stuff" id="interior-stuff" checked>
+                <span class="radio-indicator"></span>
+              </li>
+              <li class="list-radio__item">
+                <label class="list-radio__label" for="kids-toys">
+                  Детская игрушка
+                </label>
+                <input class="visually-hidden" type="radio" value="kids-toys" id="kids-toys">
+                <span class="radio-indicator"></span>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <ul class="social">
