@@ -1,3 +1,34 @@
+<!--
+Определение назначения классов
+
+//.header//
+.стили / .позиционирование [назначение]
+.main-title / .page-header__title-header  [главный заголовок]
+.burger-button / .main-nav__toggle  [бургер]
+.button-close / .main-nav__toggle--close  [крестик]
+.site-menu / .main-nav__list  [список]
+.search-form / .main-nav__search  [поиск]
+.cart-link / .main-nav__link  [корзина]
+
+//.main//
+.catalog-section / .stuff-interior  [предметы интерьера]
+.catalog-section--dark / .stuff-toys  [детские игрушки]
+.promo-title / .products-promo__title  [заголовок товара недели]
+.button / .product-of-week__buy  [большая кнопка "заказать"]
+.features-title / .company-features__title  [заголовок преимуществ]
+.features-item / .company-features__item  [текст преимуществ]
+.reviews-title / .company-reviews__title  [заголовок отзывов]
+.button / .company-reviews__button  [большая кнопка "написать"]
+.contacts-title / .company-contacts__title  [заголовок контактов]
+.button / .company-contacts__button  [большая кнопка "напишите нам"]
+
+//.footer//
+.copyright / .page-footer__copyright  [блок с копирайтом]
+
+ -->
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -6,19 +37,19 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title-header">
+      <h1 class="page-header__title-header main-title">
         Милые штуки ручной работы для дома
       </h1>
       <a class="page-header__logo-link">
         <img class="page-header__logo-image" src="img/" width="100" height="100" alt="Логотип магазина Mishka">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle burger-button" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
         </button>
-        <button class="main-nav__toggle--close" type="button">
+        <button class="main-nav__toggle--close button-close" type="button">
           <span class="visually-hidden">
             Закрыть меню
           </span>
@@ -35,13 +66,13 @@
             </a>
           </li>
         </ul>
-        <form class="search-form">
+        <form class="main-nav__search search-form">
           <label class="search-form__label visually-hidden" for="search-menu">
             Поиск по сайту
           </label>
           <input class="search-form__input-text" type="text" name="main-search" id="search-menu" placeholder="Поиск по сайту">
         </form>
-        <a class="main-nav__link" href="cart.html">
+        <a class="main-nav__link cart-link" href="cart.html">
           Корзина:
           <span class="main-nav__cart-amount">пока пуста</span>
         </a>
@@ -52,15 +83,15 @@
         <h1 class="visually-hidden">
           Меню товаров
         </h1>
-        <a class="catalog-section item-interior-stuff" href="interior-items.html">
+        <a class="catalog-section stuff-interior" href="interior-items.html">
           Предметы интерьера
         </a>
-        <a class="catalog-section item-kids-toys" href="kids-toys.html">
+        <a class="catalog-section--dark stuff-toys" href="kids-toys.html">
           Детские игрушки
         </a>
       </section>
       <section class="products-promo">
-        <h1 class="products-promo__title">
+        <h1 class="products-promo__title  promo-title">
           Товар недели
         </h1>
         <article class="product-of-week">
@@ -106,7 +137,7 @@
         </article>
       </section>
       <section class="company-features">
-        <h1 class="company-features__title">
+        <h1 class="company-features__title features-title">
           Коротко о нас
         </h1>
         <ul class="company-features__list">
@@ -131,7 +162,7 @@
         </ul>
       </section>
       <section class="company-reviews">
-        <h1 class="company-reviews__title">
+        <h1 class="company-reviews__title reviews-title">
           Отзывы
         </h1>
         <div class="company-reviews__wrapper slider">
@@ -162,12 +193,12 @@
             </button>
           </p>
         </div>
-        <a class="company-reviews__button button" href="write-review.html">
-          Написать
-        </a>
+          <a class="company-reviews__button button" href="write-review.html">
+            Написать
+          </a>
       </section>
       <section class="company-contacts">
-        <h1 class="company contacts__title">
+        <h1 class="company-contacts__title contacts-title">
           Контакты
         </h1>
         <address class="company-contacts__address">
@@ -193,7 +224,7 @@
             <!-- добавлю карту позже -->
           </div>
         </address>
-        <a class="company-contacts__write-us button" href="write-us.html">
+        <a class="company-contacts__button button" href="write-us.html">
           Напишите нам
         </a>
       </section>
