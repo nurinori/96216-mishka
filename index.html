@@ -4,8 +4,6 @@
 //.header//
 .стили / .позиционирование [назначение]
 .main-title / .page-header__title-header  [главный заголовок]
-.burger-button / .main-nav__toggle  [бургер]
-.button-close / .main-nav__toggle--close  [крестик]
 .site-menu / .main-nav__list  [список]
 .search-form / .main-nav__search  [поиск]
 .cart-link / .main-nav__link  [корзина]
@@ -43,12 +41,12 @@
         <img class="page-header__logo-image" src="img/" width="100" height="100" alt="Логотип магазина Mishka">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle burger-button" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
         </button>
-        <button class="main-nav__toggle--close button-close" type="button">
+        <button class="main-nav__toggle--close" type="button">
           <span class="visually-hidden">
             Закрыть меню
           </span>
@@ -69,7 +67,7 @@
           <label class="search-form__label visually-hidden" for="search-menu">
             Поиск по сайту
           </label>
-          <input class="search-form__input-text" type="text" name="main-search" id="search-menu" placeholder="Поиск по сайту">
+          <input class="search-form__input-text" type="search" name="main-search" id="search-menu" placeholder="Поиск по сайту">
         </form>
         <a class="main-nav__link cart-link" href="cart.html">
           Корзина:
@@ -261,7 +259,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal modal-hide">
+    <div class="modal">
       <h2 class="modal__title">
         Добавить в корзину
       </h2>
@@ -292,7 +290,9 @@
             <span class="modalradio-indicator"></span>
           </li>
         </ul>
-        <input class="modal-button" type="submit" value="Добавить">
+        <button class="modal-button" type="submit">
+          Добавить
+        </button>
       </form>
     </div>
   </body>
