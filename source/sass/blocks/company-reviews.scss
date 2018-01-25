@@ -1,0 +1,15 @@
+.company-reviews__text{
+  line-height: 30px;
+}
+.company-reviews__author{
+  @include font-bold;
+  font-size: 17px;
+  color: $black;
+}
+.company-reviews__link {
+  font-style: normal;
+}
+.company-reviews__item {
+  @include reset-indents;
+}
+

@@ -1,0 +1,38 @@
+@mixin reset-indents{
+  padding: 0;
+  margin: 0;
+}
+@mixin reset-ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@mixin reset-a{
+  text-decoration: none;
+  color: inherit;
+}
+@mixin font{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin font-bold {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin bold-1720 {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+@mixin big-title {
+  @include font-bold;
+  color: $black;
+}
+@mixin button{
+  @include bold-1720;
+  color: $grey;
+  text-transform: uppercase;
+}
+

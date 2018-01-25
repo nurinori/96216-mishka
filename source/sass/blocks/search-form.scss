@@ -1,0 +1,6 @@
+.search-form input::placeholder {
+  @include font-bold;
+  font-size: 17px;
+  color: $black;
+  line-height: inherit;
+}

@@ -1,0 +1,9 @@
+.site-menu{
+  @include reset-ul;
+}
+
+.site-menu__link {
+  @include font-bold;
+  font-size: 17px;
+  color: $black;
+}

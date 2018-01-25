@@ -1,0 +1,9 @@
+.page-body {
+  @include font;
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+}
+a {
+  text-decoration: none;
+}

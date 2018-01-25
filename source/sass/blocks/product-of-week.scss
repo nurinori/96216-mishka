@@ -1,0 +1,9 @@
+.product-of-week__table {
+  line-height: 30px;
+}
+.product-of-week__price {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $grey;
+}
