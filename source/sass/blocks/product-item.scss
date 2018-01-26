@@ -1,0 +1,24 @@
+.product-item__title,
+.product-item__link,
+.product-item__price,
+.product-item__description {
+  @include reset-indents;
+}
+.product-item__link {
+  @include reset-a;
+  @include font-bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+}
+.product-item__description {
+  font-size: 13px;
+  line-height: 30px;
+}
+.product-item__price {
+  @include font-bold;
+  color: $black;
+}
+.product-item__buy-cart {
+  @include reset-button;
+}

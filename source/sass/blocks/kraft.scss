@@ -1,0 +1,10 @@
+.kraft__title {
+  @include reset-indents;
+  @include font-bold;
+  font-size: 17px;
+  color: $black;
+}
+.kraft__description {
+  font-size: 13px;
+  @include reset-indents;
+}
