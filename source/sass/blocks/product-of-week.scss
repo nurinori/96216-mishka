@@ -7,3 +7,6 @@
   line-height: 24px;
   color: $grey;
 }
+.product-of-week__description {
+  @include reset-indents;
+}

@@ -4,3 +4,6 @@
   color: $black;
   line-height: inherit;
 }
+.search-form input {
+  @include reset-input;
+}

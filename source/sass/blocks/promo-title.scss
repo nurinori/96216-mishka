@@ -1,4 +1,5 @@
 .promo-title {
   @include bold-1720;
+  @include reset-indents;
   color: $light-mint;
 }
