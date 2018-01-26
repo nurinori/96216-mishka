@@ -1,0 +1,31 @@
+.filters__title {
+  @include reset-indents;
+  @include font-bold;
+  color: $light-mint;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.filters__fieldset {
+  @include reset-indents;
+  border: none;
+}
+.filters__list {
+  @include reset-ul;
+}
+.filters__label {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+}
+.filters-placeholder::placeholder{
+  font-size: 17px;
+  line-height: 18px;
+}
+.filters__textarea {
+  @include font;
+  color: $grey;
+  font-size: 17px;
+  line-height: 18px;
+}
