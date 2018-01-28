@@ -1,10 +1,24 @@
+.kraft {
+  border: 1px solid $milk;
+  width: 260px;
+  margin: 0 auto 55px auto;
+}
 .kraft__title {
-  @include reset-indents;
   @include font-bold;
   font-size: 17px;
   color: $black;
+  padding: 23px 30px 20px 90px;
+  margin: 0;
 }
 .kraft__description {
   font-size: 13px;
   @include reset-indents;
+  margin: 0 0 24px 35px;
+}
+.kraft__video {
+  margin-bottom: 25px;
+}
+.kraft__link {
+  margin: 0 0 35px 35px;
+  width: 190px;
 }

@@ -1,3 +1,9 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  height: 374px;
+  margin-bottom: 30px;
+}
 .product-item__title,
 .product-item__link,
 .product-item__price,
@@ -10,6 +16,9 @@
   font-size: 17px;
   line-height: 18px;
   color: $black;
+}
+.product-item__link-img {
+  order: -1;
 }
 .product-item__description {
   font-size: 13px;

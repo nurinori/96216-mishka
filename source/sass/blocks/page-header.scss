@@ -6,17 +6,27 @@
 }
 .page-header__title {
   @include padding-line;
+  border-top: 1px solid $border;
+  order: 1;
+  margin: 0;
+  width: 100%;
+  background-color: $milk;
+}
+.page-header__title--index{
   background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
-  border-top: 1px solid $border;
-  order: 1;
-  padding-top: 72px;
-  margin: 0;
   min-height: 210px;
-
+  padding-top: 72px;
 }
 .page-header__logo-link{
   margin-top: 22px;
   margin-bottom: 21px;
+}
+.page-header__title--catalog {
+  min-height: 106px;
+  padding-top: 70px;
+}
+.page-header--catalog {
+  margin-bottom: 30px;
 }

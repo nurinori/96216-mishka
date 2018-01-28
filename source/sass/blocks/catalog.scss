@@ -1,0 +1,8 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
+  @include padding-line;
+  margin-bottom: 25px;
+}
