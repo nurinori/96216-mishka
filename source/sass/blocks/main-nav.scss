@@ -1,3 +1,9 @@
+.main-nav {
+  @include padding-line;
+  height: 316px;
+  display: none;
+}
 .main-nav__toggle {
   @include reset-button;
+  min-width: 260px;
 }

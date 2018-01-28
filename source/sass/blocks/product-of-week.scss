@@ -1,12 +1,35 @@
+.product-of-week {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+}
+.product-of-week__title {
+  order: -1;
+  margin: 0 0 4px 0;
+}
+.product-of-week__main-title {
+  margin: 0 0 25px 0;
+}
+.product-of-week__description {
+  width: 260px;
+  margin: 0 0 20px 0;
+}
 .product-of-week__table {
   line-height: 30px;
+  height: 110px;
+  margin: 0 0 34px 0;
+}
+.product-of-week__pic {
+  margin: 0 0 24px 0;
 }
 .product-of-week__price {
   @include font-bold;
   font-size: 17px;
   line-height: 24px;
   color: $grey;
+  margin: 0 auto 25px auto;
 }
-.product-of-week__description {
-  @include reset-indents;
+.product-of-week__buy {
+  margin-bottom: 36px;
 }

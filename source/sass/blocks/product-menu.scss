@@ -1,0 +1,20 @@
+.product-menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+.product-menu__item {
+  background-color: $light-mint;
+}
+.product-menu__item--dark {
+  background-color: $dark-mint;
+}
+.product-menu__item,
+.product-menu__item--dark {
+    @include font-bold;
+    font-size: 19px;
+    @include reset-a;
+    color: $white;
+    padding: 25px 0px 30px 27px;
+}
+

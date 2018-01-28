@@ -1,42 +1,18 @@
-<!--
-Определение назначения классов
 
-//.header//
-.стили / .позиционирование [назначение]
-.main-title / .page-header__title-header  [главный заголовок]
-.site-menu / .main-nav__list  [список]
-.search-form / .main-nav__search  [поиск]
-.cart-link / .main-nav__link  [корзина]
-
-//.main//
-.catalog-section / .stuff-interior  [предметы интерьера]
-.catalog-section--dark / .stuff-toys  [детские игрушки]
-.promo-title / .products-promo__title  [заголовок товара недели]
-.button / .product-of-week__buy  [большая кнопка "заказать"]
-.features-title / .company-features__title  [заголовок преимуществ]
-.features-item / .company-features__item  [текст преимуществ]
-.reviews-title / .company-reviews__title  [заголовок отзывов]
-.button / .company-reviews__button  [большая кнопка "написать"]
-.contacts-title / .company-contacts__title  [заголовок контактов]
-.button / .company-contacts__button  [большая кнопка "напишите нам"]
-
-//.footer//
-.copyright / .page-footer__copyright  [блок с копирайтом]
-
- -->
 
 
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mishka</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body body-wrapper">
     <header class="page-header">
-      <h1 class="page-header__title-header main-title">
-        Милые штуки ручной работы для дома
+      <h1 class="page-header__title main-title">
+        Милые штуки ручной работы&#160;для дома
       </h1>
       <a class="page-header__logo-link">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
@@ -76,18 +52,18 @@
         <h1 class="visually-hidden">
           Меню товаров
         </h1>
-        <a class="catalog-section stuff-interior" href="interior-items.html">
-          Предметы интерьера
+        <a class="product-menu__item product-menu__link" href="interior-items.html">
+          Предметы <br> интерьера
         </a>
-        <a class="catalog-section--dark stuff-toys" href="kids-toys.html">
-          Детские игрушки
+        <a class="product-menu__item product-menu__item--dark product-menu__link" href="kids-toys.html">
+          Детские <br> игрушки
         </a>
       </section>
       <section class="products-promo">
-        <h1 class="products-promo__title promo-title">
-          Товар недели
-        </h1>
         <article class="product-of-week">
+          <h1 class="product-of-week__main-title promo-title">
+          Товар недели
+          </h1>
           <h2 class="product-of-week__title section-title">
             Вязаные корзинки
           </h2>
@@ -120,7 +96,7 @@
               </td>
             </tr>
           </table>
-          <img class="product-of-week__pic" src="img/" width="100" height="100" alt="Вязаные корзинки">
+          <img class="product-of-week__pic" src="img/triple-set-mobile@1x.jpg" width="260" height="135" alt="Вязаные корзинки">
           <span class="product-of-week__price">
             Цена: 990 руб
           </span>
@@ -131,26 +107,26 @@
       </section>
       <section class="company-features">
         <h1 class="company-features__title section-title">
-          Коротко о нас
+          Коротко о нас:
         </h1>
         <ul class="company-features__list">
           <li class="company-features__item features-item">
-            Экологически чистые материалы
+            Экологически чистые&#160;материалы
           </li>
           <li class="company-features__item features-item">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль по&#160;российской&#160; цене
           </li>
           <li class="company-features__item features-item">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки на&#160;фотографиях
           </li>
           <li class="company-features__item features-item">
-            Связано вручную с любовью и умилением
+            Связано вручную&#160;с любовью&#160;и умилением
           </li>
           <li class="company-features__item features-item">
             Поддержка отечественного производителя
           </li>
           <li class="company-features__item features-item">
-            Поставляется в подарочной упаковке
+            Поставляется в подарочной&#160;упаковке
           </li>
         </ul>
       </section>
@@ -197,25 +173,27 @@
         <address class="company-contacts__address">
           <table class="company-contacts__table">
             <tr>
-              <td>
+              <td class="company-contacts__td-left">
                 e-mail:
               </td>
-              <td>
+              <td class="company-contacts__td-right-top">
                 <a href="mailto:info@mimimishkashop.ru" class="email-link">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr>
-              <td>
+              <td class="company-contacts__td-left">
                 адрес:
               </td>
-              <td>
-                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              <td class="company-contacts__td-right-bottom">
+                г. Санкт-Петербург, ул.&#160;Большая Конюшенная, д.&#160;19/8,&#160;офис 101
               </td>
             </tr>
           </table>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995517736382!2d30.321986276147804!3d59.93879419544682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516791883928" width="322" height="427" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <img class="map-img" src="img/map-mobile@1x.jpg" width="322" height="427" alt="Карта проезда">
+          <div class="company-contacts__map">
+            <iframe class="company-contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995517736382!2d30.321986276147804!3d59.93879419544682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516791883928" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p class="company-contacts__map-img">
+              <img class="company-contacts__map-img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта проезда">
+            </p>
           </div>
         </address>
         <a class="company-contacts__button button" href="write-us.html">
@@ -248,7 +226,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">
             HTML Academy

@@ -1,6 +1,6 @@
 .main-title {
   @include big-title;
-  @include reset-indents;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
 }
