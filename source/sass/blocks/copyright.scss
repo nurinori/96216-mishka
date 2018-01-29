@@ -1,0 +1,7 @@
+.copyright__text {
+  font-size: 19px;
+  line-height: 19px;
+  color: $black;
+
+  @include font-bold;
+}

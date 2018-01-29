@@ -1,0 +1,14 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  background-color: $milk;
+
+  @include padding-line;
+}
+
+.page-footer__copyright {
+  min-width: 260px;
+  padding: 30px 0 30px 38px;
+}

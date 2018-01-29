@@ -1,0 +1,32 @@
+.kraft {
+  width: 260px;
+  margin: 0 auto 55px auto;
+
+  border: 1px solid $milk;
+}
+
+.kraft__title {
+  margin: 0;
+  padding: 23px 30px 20px 90px;
+
+  font-size: 17px;
+  color: $black;
+
+  @include font-bold;
+}
+
+.kraft__description {
+  margin: 0 0 24px 35px;
+  padding: 0;
+
+  font-size: 13px;
+}
+
+.kraft__video {
+  margin-bottom: 25px;
+}
+
+.kraft__link {
+  width: 190px;
+  margin: 0 0 35px 35px;
+}

@@ -1,0 +1,12 @@
+body {
+  @include font;
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

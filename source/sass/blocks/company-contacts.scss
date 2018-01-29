@@ -1,0 +1,52 @@
+.company-contacts__address {
+  margin-bottom: 30px;
+}
+
+.company-contacts__title {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 23px;
+}
+
+.company-contacts__table {
+  width: 260px;
+  margin: 0 auto 35px auto;
+  padding: 0;
+
+  line-height: 30px;
+  font-style: normal;
+}
+
+.company-contacts__td-left {
+  width: 77px;
+
+  vertical-align: top;
+}
+
+.company-contacts__td-right-top {
+  width: 183px;
+  padding-bottom: 32px;
+
+  vertical-align: top;
+}
+
+.company-contacts__map-img {
+  position: absolute;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.company-contacts__iframe {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  border: 0;
+}
+
+.company-contacts__button {
+  margin: 0 auto 39px auto;
+}

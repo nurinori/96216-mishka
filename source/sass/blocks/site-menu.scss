@@ -1,0 +1,11 @@
+.site-menu {
+  @include reset-ul;
+}
+
+.site-menu__link {
+  font-size: 17px;
+  color: $black;
+
+  @include font-bold;
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.form-order {
+  width: 260px;
+  margin: 0 auto;
+
+  @include padding-line;
+}
+
+.form-order__description {
+  margin: 0;
+  padding: 23px 0 22px 0;
+
+  font-size: 13px;
+}

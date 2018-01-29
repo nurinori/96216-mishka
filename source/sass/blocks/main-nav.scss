@@ -1,0 +1,11 @@
+.main-nav {
+  // временно до перестройки на планшет
+  display: none;
+  height: 316px;
+
+  @include padding-line;
+}
+
+.main-nav__toggle {
+  @include reset-button;
+}

@@ -1,0 +1,92 @@
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+@mixin reset-indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin reset-button {
+  margin: 0;
+  padding: 0;
+
+  border-width: 0;
+  border-style: none;
+}
+
+@mixin reset-input {
+  margin: 0;
+  padding: 0;
+
+  border-width: 0;
+}
+
+@mixin padding-line {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@mixin margin {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin font {
+  font-weight: 400;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  font-weight: 700;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-style: normal;
+}
+
+@mixin bold-1720 {
+  font-size: 17px;
+  line-height: 20px;
+
+  @include font-bold;
+}
+
+@mixin big-title {
+  color: $black;
+
+  @include font-bold;
+}
+
+@mixin button {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 52px;
+  padding: 14px 0;
+
+  text-align: center;
+  color: $grey;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid $grey;
+
+  @include bold-1720;
+}

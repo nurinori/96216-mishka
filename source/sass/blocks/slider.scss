@@ -1,0 +1,11 @@
+.slider__buttons {
+  height: 50px;
+
+  border: 1px solid $grey;
+
+  @include reset-indents;
+}
+
+.slider__button {
+  @include reset-button;
+}
