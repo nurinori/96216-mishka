@@ -1,9 +1,11 @@
 .search-form input::placeholder {
-  @include font-bold;
   font-size: 17px;
-  color: $black;
   line-height: inherit;
+  color: $black;
+
+  @include font-bold;
 }
+
 .search-form input {
   @include reset-input;
 }

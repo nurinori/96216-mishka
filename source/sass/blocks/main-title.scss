@@ -1,6 +1,7 @@
 .main-title {
-  @include big-title;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @include big-title;
 }

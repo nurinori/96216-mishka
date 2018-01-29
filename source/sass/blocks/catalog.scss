@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 260px;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
+
   @include padding-line;
-  margin-bottom: 25px;
 }

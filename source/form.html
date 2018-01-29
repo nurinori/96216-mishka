@@ -2,12 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Mishka</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mishka: форма заказа</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body body-wrapper">
     <header class="page-header">
-      <h1 class="page-header__title main-title">
+      <h1 class="page-header__title page-header__title--noimg main-title">
+        Вязание на заказ
+      </h1>
       <a class="page-header__logo-link" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
       </a>
@@ -44,21 +47,21 @@
     <main class="page-main">
       <section class="form-order">
         <p class="form-order__description">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните&#160;простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="form-order__filters filters" method="get" action="https://echo.htmlacademy.ru" name="form-get">
           <fieldset class="filters__fieldset">
             <legend class="filters__title">
               Тип
             </legend>
-            <ul class="filters__list list-radio">
-              <li class="list-radio__item">
+            <ul class="filters__list filters__list--padding">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="radio" name="type-stuff" value="interior-stuff" id="interior-stuff" checked>
                 <label class="filters__label" for="interior-stuff">
                   Аксессуар для интерьера
                 </label>
               </li>
-              <li class="list-radio__item">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="radio" name="type-stuff" value="kids-toys" id="kids-toys">
                 <label class="filters__label" for="kids-toys">
                   Детская игрушка
@@ -66,42 +69,42 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters__fieldset form-checkbox">
+          <fieldset class="filters__fieldset filters__fieldset--flex">
             <legend class="filters__title">
               Цвет
             </legend>
-            <ul class="filters__list list-checkbox">
-              <li class="list-checkbox__item">
+            <ul class="filters__list filters__list--padding">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="checkbox" name="white-color" id="white-color" checked>
                 <label class="filters__label" for="white-color">
                   Белый
                 </label>
               </li>
-              <li class="list-checkbox__item">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="checkbox" name="grey-color" id="grey-color" checked>
                 <label class="filters__label" for="grey-color">
                   Серый
                 </label>
               </li>
-              <li class="list-checkbox__item">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="checkbox" name="tiffany-color" id="tiffany-color">
                 <label class="filters__label" for="tiffany-color">
                   «Тиффани»
                 </label>
               </li>
-              <li class="list-checkbox__item">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="checkbox" name="black-color" id="black-color">
                 <label class="filters__label" for="black-color">
                   Черный
                 </label>
               </li>
-              <li class="list-checkbox__item">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="checkbox" name="pink-color" id="pink-color">
                 <label class="filters__label" for="pink-color">
                   Розовый
                 </label>
               </li>
-              <li class="list-checkbox__item">
+              <li class="filters__item-check">
                 <input class="visually-hidden" type="checkbox" name="orange-color" id="orange-color">
                 <label class="filters__label" for="orange-color">
                   Оранжевый
@@ -109,47 +112,53 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters__fieldset form-name">
-            <legend class="filters__title">
+          <fieldset class="filters__fieldset">
+            <legend class="filters__title filters__title--write">
               ФИО
             </legend>
-            <ul class="filters__list list-name">
-              <li class="list-name__item">
+            <ul class="filters__list">
+              <li class="filters__item-write">
                 <label class="filters__label" for="name-client">
                   Имя:
                 </label>
-                <input class="filters-placeholder" type="text" id="name-client" placeholder="Введите ваше имя" required>
+                <br>
+                <input class="filters-placeholder filters-placeholder--name" type="text" id="name-client" placeholder="Введите ваше имя" required>
                 </li>
-              <li class="list-name__item">
+              <li class="filters__item-write">
                 <label class="filters__label" for="surname-client">
                   Фамилия:
                 </label>
-                <input class="filters-placeholder" type="text" id="surname-client" placeholder="Укажите фамилию" required>
-                </li>
-              <li class="list-name__item">
+                <br>
+                <input class="filters-placeholder filters-placeholder--name" type="text" id="surname-client" placeholder="Укажите фамилию" required>
+              </li>
+              <li class="filters__item-write">
                 <label class="filters__label" for="patronymic-client">
                   Отчество:
                 </label>
-                <input class="filters-placeholder" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
+                <br>
+                <input class="filters-placeholder filters-placeholder--name" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters__fieldset form-tel">
-            <label class="filters__title" for="tel-client">
+          <fieldset class="filters__fieldset filters__fieldset--write">
+            <label class="filters__title filters__title--write" for="tel-client">
               Тел
             </label>
+            <br>
             <input class="filters-placeholder" type="tel" id="tel-client" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ" required>
           </fieldset>
-          <fieldset class="filters__fieldset form-email">
-            <label class="filters__title" for="email-client">
+          <fieldset class="filters__fieldset filters__fieldset--write">
+            <label class="filters__title filters__title--write" for="email-client">
               E-mail
             </label>
+            <br>
             <input class="filters-placeholder" type="email" id="email-client" placeholder="Ваш Email" required>
           </fieldset>
-          <fieldset class="filters__fieldset form-order-wishes">
-            <label class="filters__title" for="text-order-wishes">
+          <fieldset class="filters__fieldset filters__fieldset--write">
+            <label class="filters__title filters__title--write" for="text-order-wishes">
               Доп
             </label>
+            <br>
             <textarea class="filters__textarea" id="text-order-wishes">
               Опишите все ваши пожелания к заказу
             </textarea>
@@ -157,7 +166,7 @@
           <span class="form-order__notes">
             Поля обязательны для заполнения
           </span>
-          <input class="button" type="submit" value="Отправить заказ">
+          <input class="button filters__button" type="submit" value="Отправить заказ">
         </form>
       </section>
     </main>

@@ -1,3 +1,4 @@
 .email-link {
-  @include reset-a;
+  color: $grey;
+  text-decoration: none;
 }

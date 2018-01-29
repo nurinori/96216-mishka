@@ -1,4 +1,5 @@
 .features-item {
-  @include bold-1720;
   color: $black;
+
+  @include bold-1720;
 }

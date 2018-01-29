@@ -1,12 +1,15 @@
 .catalog-section {
   background-color: $light-mint;
 }
+
 .catalog-section--dark {
   background-color: $dark-mint;
 }
+
 .catalog-section,
 .catalog-section--dark {
-    @include font-bold;
-    font-size: 19px;
-    color: $white;
+  font-size: 19px;
+  color: $white;
+
+  @include font-bold;
 }

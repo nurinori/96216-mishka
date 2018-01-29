@@ -2,31 +2,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   border-top: 1px solid $border;
 }
+
 .page-header__title {
-  @include padding-line;
-  border-top: 1px solid $border;
   order: 1;
-  margin: 0;
   width: 100%;
+  margin: 0;
+
   background-color: $milk;
+  border-top: 1px solid $border;
+
+  @include padding-line;
 }
-.page-header__title--index{
-  background-image: url(../img/hero-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50%;
+
+.page-header__title--index {
   min-height: 210px;
   padding-top: 72px;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
-.page-header__logo-link{
+
+.page-header__logo-link {
   margin-top: 22px;
   margin-bottom: 21px;
 }
-.page-header__title--catalog {
+
+.page-header__title--noimg {
   min-height: 106px;
   padding-top: 70px;
 }
+
 .page-header--catalog {
   margin-bottom: 30px;
 }
