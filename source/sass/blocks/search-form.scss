@@ -6,6 +6,8 @@
   @include font-bold;
 }
 
-.search-form input {
-  @include reset-input;
+.search-form__input-text {
+  margin: 0;
+
+  border-width: 0;
 }
