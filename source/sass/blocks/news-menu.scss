@@ -1,0 +1,28 @@
+.news-menu {
+  display: none;
+
+  @include reset-ul;
+}
+
+.news-menu__link {
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 25px;
+  padding-left: 24%;
+
+  color: $black;
+  text-decoration: none;
+
+  @include font-bold;
+}
+
+@media (min-width: 1250px) {
+  .news-menu {
+    display: flex;
+    padding-left: 50px;
+  }
+
+  .news-menu__link {
+    padding: 17px 10px 25px 50px;
+  }
+}

@@ -5,20 +5,41 @@
 }
 
 .product-menu__item {
-  background-color: $light-mint;
-}
-
-.product-menu__item--dark {
-  background-color: $dark-mint;
-}
-
-.product-menu__item,
-.product-menu__item--dark {
   padding: 25px 0 30px 27px;
 
   font-size: 19px;
   color: $white;
   text-decoration: none;
 
+  background-color: $light-mint;
+
   @include font-bold;
+
+  &--dark {
+    background-color: $dark-mint;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-menu {
+    flex-direction: row;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .product-menu__item {
+    width: 50%;
+    margin-top: -119px;
+    padding: 28px 0 30px 37px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-menu {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }

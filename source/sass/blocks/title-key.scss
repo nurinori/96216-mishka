@@ -1,0 +1,50 @@
+.title-key {
+  width: calc(100% - 60px);
+  padding-top: 72px;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+
+  background-color: $milk;
+
+  @include big-title;
+  @include padding-line;
+
+  &--index {
+    padding-bottom: 120px;
+  }
+
+  &--noimg {
+    padding-bottom: 76px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-key {
+    padding-top: 153px;
+    padding-bottom: 382px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &--noimg {
+      padding-top: 93px;
+      padding-bottom: 80px;
+    }
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .title-key {
+    padding-bottom: 478px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    &--noimg {
+      padding-bottom: 89px;
+    }
+  }
+}

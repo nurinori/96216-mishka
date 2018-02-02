@@ -6,41 +6,57 @@
     <title>Mishka: форма заказа</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body body-wrapper">
+  <body>
     <header class="page-header">
-      <h1 class="page-header__title page-header__title--noimg main-title">
+      <h1 class="title-key title-key--noimg page-header__title">
         Вязание на заказ
       </h1>
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
-      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">
             Меню
           </span>
         </button>
-        <ul class="main-nav__list site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="catalog.html">
+        <a class="main-nav__logo-link" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
+        </a>
+        <ul class="services-menu main-nav__services">
+          <li>
+            <a class="services-menu__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="form.html">
+          <li>
+            <a class="services-menu__link" href="form.html">
               Вязание на заказ
             </a>
           </li>
         </ul>
-        <form class="main-nav__search search-form">
+        <!-- Desktop only -->
+        <ul class="news-menu main-nav__news">
+          <li>
+            <a class="news-menu__link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li>
+            <a class="news-menu__link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <form class="search-form main-nav__search">
           <label class="search-form__label visually-hidden" for="search-menu">
             Поиск по сайту
           </label>
           <input class="search-form__input-text" type="search" name="main-search" id="search-menu" placeholder="Поиск по сайту">
         </form>
-        <a class="main-nav__link cart-link" href="cart.html">
+        <a class="main-nav__cart" href="cart.html">
           Корзина:
-          <span class="cart-link__cart-amount">пока пуста</span>
+          <span class="main-nav__cart-amount">пока пуста</span>
+        </a>
+        <a class="main-nav__delivery" href="delivery.html">
+          Бесплатная доставка по России
         </a>
       </nav>
     </header>

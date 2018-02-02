@@ -9,10 +9,10 @@
   text-transform: uppercase;
 
   @include font-bold;
-}
 
-.filters__title--write {
-  margin: 0 0 25px 0;
+  &--write {
+    margin: 0 0 25px 0;
+  }
 }
 
 .filters__fieldset {
@@ -20,22 +20,22 @@
   padding: 0;
 
   border: none;
-}
 
-.filters__fieldset--write {
-  margin: 0 0 35px 0;
-}
+  &--write {
+    margin: 0 0 35px 0;
+  }
 
-.filters__fieldset--flex {
-  display: flex;
+  &__fieldset--flex {
+    display: flex;
+  }
 }
 
 .filters__list {
   @include reset-ul;
-}
 
-.filters__list--padding {
-  padding-left: 64px;
+  &--padding {
+    padding-left: 64px;
+  }
 }
 
 .filters__item-check {
@@ -59,7 +59,7 @@
 
   @include font-bold;
 }
-
+// переделать класс
 .filters-placeholder {
   border: none;
 
@@ -99,5 +99,6 @@
 
 .filters__button {
   margin-bottom: 60px;
+
   background-color: $white;
 }
