@@ -25,6 +25,7 @@
 @media (min-width: 768px) {
   .features {
     width: 668px;
+    margin-bottom: 50px;
 
     @include padding-tablet;
   }
