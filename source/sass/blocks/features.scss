@@ -15,7 +15,7 @@
 
 .features__title {
   margin: 0;
-  padding: 35px 0 28px 0;
+  padding: 28px 0 28px 0;
 }
 
 .features__item {
@@ -28,11 +28,18 @@
 
     @include padding-tablet;
   }
+
+  .features__title {
+    padding: 50px 0 26px 0;
+  }
+
   .features__list {
     width: 668px;
   }
+
   .features__item {
     width: 50%;
+    padding: 77px 0 35px 0;
 
     &--flower {
       order: 1;
@@ -57,7 +64,11 @@
 
 @media (min-width: 1250px) {
   .features {
-    paddin-left: 275px;
+    width: 700px;
     padding-right: 275px;
+    padding-left: 275px;
+  }
+  .features__list {
+    width: 700px;
   }
 }
