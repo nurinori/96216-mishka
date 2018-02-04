@@ -47,6 +47,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 768px;
+    margin-bottom: 86px;
     padding: 0;
     // временно, чтобы видеть сетку
 
@@ -71,6 +72,7 @@
   .reviews__author {
     font-size: 18px;
   }
+
   .reviews__link {
     width: 334px;
   }
@@ -93,9 +95,11 @@
   .reviews {
     width: 1050px;
   }
+
   .reviews__title {
     margin-left: 175px;
   }
+
   .reviews__text {
     width: 780px;
   }

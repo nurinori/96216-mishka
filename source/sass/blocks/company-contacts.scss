@@ -50,3 +50,71 @@
 .company-contacts__button {
   margin: 0 auto 39px auto;
 }
+
+@media (min-width: 768px) {
+  .company-contacts__title {
+    margin-left: 7%;
+    padding-top: 60px;
+    padding-bottom: 43px;
+  }
+
+  .company-contacts__table {
+    margin: 0 7% 50px 7%;
+  }
+
+  .company-contacts__table tbody {
+    display: flex;
+    width: 668px;
+  }
+
+  .company-contacts__table tr {
+    width: 50%;
+  }
+
+  .company-contacts__address {
+    margin-bottom: 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .company-contacts__button {
+    width: 230px;
+    height: 50px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .company-contacts {
+    width: 1050px;
+    margin: 0 auto 105px auto;
+  }
+
+  .company-contacts__title {
+    position: relative;
+
+    margin-left: 175px;
+    padding-top: 130px;
+  }
+
+  .company-contacts__table {
+    margin-left: 175px;
+  }
+
+  .company-contacts__table tbody {
+    display: table;
+    width: 350px;
+  }
+
+  .company-contacts__map {
+    width: 525px;
+    height: 458px;
+    margin-top: -385px;
+    margin-left: 525px;
+  }
+
+  .company-contacts__button {
+    margin: -100px 0 0 175px;
+  }
+}

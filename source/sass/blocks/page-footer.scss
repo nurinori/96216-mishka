@@ -11,3 +11,12 @@
 .page-footer__copyright {
   padding: 30px 0 30px 38px;
 }
+// временно
+@media (min-width: 768px) {
+  height: 144px;
+
+  @include padding-tablet;
+}
+@media (min-width: 1250px) {
+  @include padding-desktop;
+}
