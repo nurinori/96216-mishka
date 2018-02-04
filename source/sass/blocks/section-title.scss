@@ -1,6 +1,19 @@
 .section-title {
+  @include big-title;
   font-size: 25px;
   line-height: 30px;
+}
 
-  @include big-title;
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .section-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

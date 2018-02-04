@@ -1,0 +1,64 @@
+.promo {
+  @include padding-line;
+  margin-bottom: 40px;
+}
+
+.promo__item {
+  margin: 0 auto;
+}
+
+.promo__title-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__buy-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .promo {
+    @include padding-tablet;
+    margin-bottom: 70px;
+  }
+
+  .promo__main-wrapper {
+    position: relative;
+  }
+
+  .promo__buy-wrapper {
+    width: 293px;
+    margin-top: -132px;
+  }
+
+  .promo__title-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 668px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .promo {
+    @include padding-desktop;
+  }
+
+  .promo__title-wrapper {
+    position: relative;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1050px;
+  }
+
+  .promo__buy-wrapper {
+    margin-top: -225px;
+    margin-left: 175px;
+    align-content: flex-end;
+  }
+}

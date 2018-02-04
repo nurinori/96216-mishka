@@ -1,11 +1,11 @@
-.company-features {
+.features {
   width: 260px;
   margin: 0 auto 30px auto;
 
   @include padding-line;
 }
 
-.company-features__list {
+.features__list {
   display: flex;
   flex-wrap: wrap;
   width: 260px;
@@ -13,11 +13,51 @@
   @include reset-ul;
 }
 
-.company-features__title {
+.features__title {
   margin: 0;
   padding: 35px 0 28px 0;
 }
 
-.company-features__item {
+.features__item {
   padding: 57px 0 26px 0;
+}
+
+@media (min-width: 768px) {
+  .features {
+    width: 668px;
+
+    @include padding-tablet;
+  }
+  .features__list {
+    width: 668px;
+  }
+  .features__item {
+    width: 50%;
+
+    &--flower {
+      order: 1;
+    }
+    &--money {
+      order: 3;
+    }
+    &--heart {
+      order: 5;
+    }
+    &--clew {
+      order: 2;
+    }
+    &--rocket {
+      order: 4;
+    }
+    &--present {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  .features {
+    paddin-left: 275px;
+    padding-right: 275px;
+  }
 }

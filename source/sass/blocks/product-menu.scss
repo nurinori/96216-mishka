@@ -23,8 +23,9 @@
 @media (min-width: 768px) {
   .product-menu {
     flex-direction: row;
-    padding-right: 50px;
-    padding-left: 50px;
+    margin-bottom: 50px;
+
+    @include padding-tablet;
   }
 
   .product-menu__item {
@@ -39,7 +40,8 @@
 
 @media (min-width: 1250px) {
   .product-menu {
-    padding-right: 100px;
-    padding-left: 100px;
+    margin-bottom: 70px;
+
+    @include padding-desktop;
   }
 }

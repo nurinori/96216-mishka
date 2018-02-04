@@ -4,14 +4,14 @@
 @import "mixins";
 @import "global";
 @import "visually-hidden";
-@import "blocks/product-of-week";
+@import "blocks/title-week";
+@import "blocks/week-best";
 @import "blocks/search-form";
-@import "blocks/promo-title";
 @import "blocks/button";
-@import "blocks/section-title";
 @import "blocks/features-item";
 @import "blocks/company-reviews";
 @import "blocks/company-features";
+@import "blocks/section-title";
 @import "blocks/contacts-title";
 @import "blocks/company-contacts";
 @import "blocks/email-link";
@@ -28,7 +28,7 @@
 @import "blocks/page-header";
 @import "blocks/title-key";
 @import "blocks/product-menu";
-@import "blocks/products-promo";
+@import "blocks/promo";
 @import "blocks/page-footer";
 @import "blocks/form-order";
 @import "blocks/catalog";
