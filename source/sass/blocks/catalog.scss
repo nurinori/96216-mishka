@@ -6,3 +6,39 @@
 
   @include padding-line;
 }
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 668px;
+    margin-bottom: 50px;
+
+    @include padding-tablet;
+  }
+
+  .catalog__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .catalog {
+    width: 1050px;
+    margin-bottom: 0;
+
+
+    @include padding-desktop;
+  }
+
+  .catalog__item {
+    margin-right: 51px;
+    margin-bottom: 57px;
+  }
+
+  .catalog__item:nth-child(3) {
+    margin-right: 0;
+  }
+}

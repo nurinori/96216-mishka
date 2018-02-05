@@ -27,5 +27,18 @@
     box-sizing: border-box;
 
     border: 0;
+
+    &--catalog {
+      margin-bottom: 79px;
+    }
+  }
+}
+
+@media (min-width: 1050px) {
+  .page-header {
+
+    &--catalog {
+      margin-bottom: 129px;
+    }
   }
 }
