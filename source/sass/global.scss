@@ -12,12 +12,6 @@ body {
   @include font;
 }
 
-@media (min-width: 1600px) {
-  body {
-    width: 1600px;
-  }
-}
-
 img {
   display: block;
   max-width: 100%;

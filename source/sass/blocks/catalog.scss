@@ -4,7 +4,7 @@
   width: 260px;
   margin: 0 auto 25px auto;
 
-  @include padding-line;
+  @include padding-mobile;
 }
 
 .catalog__item {
@@ -16,7 +16,7 @@
     width: 668px;
     margin-bottom: 50px;
 
-    @include padding-tablet;
+    @include padding-main;
   }
 
   .catalog__item {
@@ -24,13 +24,10 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .catalog {
     width: 1050px;
     margin-bottom: 0;
-
-
-    @include padding-desktop;
   }
 
   .catalog__item {

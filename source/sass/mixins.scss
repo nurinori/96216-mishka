@@ -38,19 +38,17 @@
 
   border-width: 0;
 }
-// поменять название
-@mixin padding-line {
+
+@mixin padding-mobile {
   padding-right: 30px;
   padding-left: 30px;
 }
-@mixin padding-tablet {
+
+@mixin padding-main {
   padding-right: 50px;
   padding-left: 50px;
 }
-@mixin padding-desktop {
-  padding-right: 100px;
-  padding-left: 100px;
-}
+
 @mixin margin {
   margin-right: auto;
   margin-left: auto;
@@ -97,4 +95,3 @@
 
   @include bold-1720;
 }
-

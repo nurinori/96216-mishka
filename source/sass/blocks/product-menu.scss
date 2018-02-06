@@ -25,7 +25,7 @@
     flex-direction: row;
     margin-bottom: 50px;
 
-    @include padding-tablet;
+    @include padding-main;
   }
 
   .product-menu__item {
@@ -38,10 +38,9 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .product-menu {
-    margin-bottom: 70px;
-
-    @include padding-desktop;
+    margin: 0 auto 70px auto;
+    max-width: 1478px;
   }
 }

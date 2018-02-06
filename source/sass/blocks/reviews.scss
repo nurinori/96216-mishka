@@ -2,7 +2,7 @@
   width: 260px;
   margin: 0 auto 49px auto;
 
-  @include padding-line;
+  @include padding-mobile;
 }
 
 .reviews__wrapper {
@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .reviews {
     width: 1050px;
   }

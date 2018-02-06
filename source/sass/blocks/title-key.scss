@@ -9,7 +9,7 @@
   background-color: $milk;
 
   @include big-title;
-  @include padding-line;
+  @include padding-mobile;
 
   &--index {
     padding-bottom: 120px;
@@ -36,7 +36,7 @@
 }
 
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .title-key {
     padding-bottom: 478px;
 

@@ -5,7 +5,7 @@
 
   background-color: $milk;
 
-  @include padding-line;
+  @include padding-mobile;
 }
 
 .page-footer__copyright {
@@ -15,8 +15,5 @@
 @media (min-width: 768px) {
   height: 144px;
 
-  @include padding-tablet;
-}
-@media (min-width: 1250px) {
-  @include padding-desktop;
+  @include padding-main;
 }

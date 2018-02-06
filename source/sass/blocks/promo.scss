@@ -1,6 +1,7 @@
 .promo {
-  @include padding-line;
   margin-bottom: 40px;
+
+  @include padding-mobile;
 }
 
 .promo__item {
@@ -20,10 +21,12 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 @media (min-width: 768px) {
   .promo {
-    @include padding-tablet;
     margin-bottom: 70px;
+
+    @include padding-main;
   }
 
   .promo__main-wrapper {
@@ -43,9 +46,8 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .promo {
-    @include padding-desktop;
     margin-bottom: 100px;
   }
 
@@ -58,8 +60,8 @@
   }
 
   .promo__buy-wrapper {
+    align-content: flex-end;
     margin-top: -225px;
     margin-left: 175px;
-    align-content: flex-end;
   }
 }
