@@ -5,10 +5,15 @@
 
   background-color: $milk;
 
-  @include padding-line;
+  @include padding-mobile;
 }
 
 .page-footer__copyright {
-  min-width: 260px;
   padding: 30px 0 30px 38px;
+}
+// временно
+@media (min-width: 768px) {
+  height: 144px;
+
+  @include padding-main;
 }

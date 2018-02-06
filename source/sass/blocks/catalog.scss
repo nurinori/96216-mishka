@@ -4,5 +4,38 @@
   width: 260px;
   margin: 0 auto 25px auto;
 
-  @include padding-line;
+  @include padding-mobile;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 668px;
+    margin-bottom: 50px;
+
+    @include padding-main;
+  }
+
+  .catalog__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1050px;
+    margin-bottom: 0;
+  }
+
+  .catalog__item {
+    margin-right: 51px;
+    margin-bottom: 57px;
+  }
+
+  .catalog__item:nth-child(3) {
+    margin-right: 0;
+  }
 }

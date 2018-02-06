@@ -4,7 +4,7 @@
   background-color: $white;
   outline: 1px solid $border-modal;
 
-  @include padding-line;
+  @include padding-mobile;
 }
 
 .modal__title {
@@ -12,6 +12,7 @@
   padding: 0;
 }
 
+// переделать класс
 .modal-form__text {
   @include reset-indents;
 }

@@ -1,0 +1,81 @@
+.features {
+  width: 260px;
+  margin: 0 auto 30px auto;
+
+  @include padding-mobile;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+
+  @include reset-ul;
+}
+
+.features__title {
+  margin: 0;
+  padding: 28px 0 28px 0;
+}
+
+.features__item {
+  padding: 57px 0 26px 0;
+}
+
+@media (min-width: 768px) {
+  .features {
+    width: 668px;
+    margin-bottom: 50px;
+
+    @include padding-main;
+  }
+
+  .features__title {
+    padding: 50px 0 26px 0;
+  }
+
+  .features__list {
+    width: 668px;
+  }
+
+  .features__item {
+    width: 50%;
+    padding: 77px 0 35px 0;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--clew {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--present {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .features {
+    width: 600px;
+    padding-right: 275px;
+    padding-left: 275px;
+  }
+
+  .features__list {
+    width: 600px;
+  }
+}

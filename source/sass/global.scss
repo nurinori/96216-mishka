@@ -1,8 +1,15 @@
 body {
-  @include font;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+
   font-size: 15px;
   line-height: 24px;
   color: $grey;
+
+  @include font;
 }
 
 img {

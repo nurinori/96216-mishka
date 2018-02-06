@@ -6,41 +6,57 @@
     <title>Mishka: форма заказа</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body body-wrapper">
+  <body>
     <header class="page-header">
-      <h1 class="page-header__title page-header__title--noimg main-title">
+      <h1 class="title-key title-key--noimg page-header__title">
         Вязание на заказ
       </h1>
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
-      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">
             Меню
           </span>
         </button>
-        <ul class="main-nav__list site-menu">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="catalog.html">
+        <a class="main-nav__logo-link" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka">
+        </a>
+        <ul class="services-menu main-nav__services">
+          <li>
+            <a class="services-menu__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="form.html">
+          <li>
+            <a class="services-menu__link services-menu__link--desktop-border" href="form.html">
               Вязание на заказ
             </a>
           </li>
         </ul>
-        <form class="main-nav__search search-form">
+        <!-- Desktop only -->
+        <ul class="news-menu main-nav__news">
+          <li>
+            <a class="news-menu__link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li>
+            <a class="news-menu__link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <form class="search-form main-nav__search">
           <label class="search-form__label visually-hidden" for="search-menu">
             Поиск по сайту
           </label>
           <input class="search-form__input-text" type="search" name="main-search" id="search-menu" placeholder="Поиск по сайту">
         </form>
-        <a class="main-nav__link cart-link" href="cart.html">
+        <a class="main-nav__cart" href="cart.html">
           Корзина:
-          <span class="cart-link__cart-amount">пока пуста</span>
+          <span class="main-nav__cart-amount">пока пуста</span>
+        </a>
+        <a class="main-nav__delivery" href="delivery.html">
+          Бесплатная доставка по России
         </a>
       </nav>
     </header>
@@ -49,124 +65,144 @@
         <p class="form-order__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните&#160;простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <form class="form-order__filters filters" method="get" action="https://echo.htmlacademy.ru" name="form-get">
-          <fieldset class="filters__fieldset">
-            <legend class="filters__title">
-              Тип
-            </legend>
-            <ul class="filters__list filters__list--padding">
-              <li class="filters__item-check">
+        <form class="form-order__filters form" method="get" action="https://echo.htmlacademy.ru" name="form-get">
+          <fieldset class="form__fieldset">
+            <div class="form__wrapper-fieldset">
+              <legend class="form__title">
+                Тип
+              </legend>
+              <ul class="form__list">
+              <li class="form__item-check">
                 <input class="visually-hidden" type="radio" name="type-stuff" value="interior-stuff" id="interior-stuff" checked>
-                <label class="filters__label" for="interior-stuff">
+                <label class="form__label" for="interior-stuff">
                   Аксессуар для интерьера
                 </label>
               </li>
-              <li class="filters__item-check">
+              <li class="form__item-check">
                 <input class="visually-hidden" type="radio" name="type-stuff" value="kids-toys" id="kids-toys">
-                <label class="filters__label" for="kids-toys">
+                <label class="form__label" for="kids-toys">
                   Детская игрушка
                 </label>
               </li>
-            </ul>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="filters__fieldset filters__fieldset--flex">
-            <legend class="filters__title">
-              Цвет
-            </legend>
-            <ul class="filters__list filters__list--padding">
-              <li class="filters__item-check">
-                <input class="visually-hidden" type="checkbox" name="white-color" id="white-color" checked>
-                <label class="filters__label" for="white-color">
-                  Белый
-                </label>
-              </li>
-              <li class="filters__item-check">
-                <input class="visually-hidden" type="checkbox" name="grey-color" id="grey-color" checked>
-                <label class="filters__label" for="grey-color">
-                  Серый
-                </label>
-              </li>
-              <li class="filters__item-check">
-                <input class="visually-hidden" type="checkbox" name="tiffany-color" id="tiffany-color">
-                <label class="filters__label" for="tiffany-color">
-                  «Тиффани»
-                </label>
-              </li>
-              <li class="filters__item-check">
-                <input class="visually-hidden" type="checkbox" name="black-color" id="black-color">
-                <label class="filters__label" for="black-color">
-                  Черный
-                </label>
-              </li>
-              <li class="filters__item-check">
-                <input class="visually-hidden" type="checkbox" name="pink-color" id="pink-color">
-                <label class="filters__label" for="pink-color">
-                  Розовый
-                </label>
-              </li>
-              <li class="filters__item-check">
-                <input class="visually-hidden" type="checkbox" name="orange-color" id="orange-color">
-                <label class="filters__label" for="orange-color">
-                  Оранжевый
-                </label>
-              </li>
-            </ul>
+          <fieldset class="form__fieldset form__fieldset--flex">
+            <div class="form__wrapper-grey">
+              <div class="form__wrapper-fieldset">
+                <legend class="form__title">
+                  Цвет
+                </legend>
+                <ul class="form__list form__list--flex">
+                <li class="form__item-check">
+                  <input class="visually-hidden" type="checkbox" name="white-color" id="white-color" checked>
+                  <label class="form__label" for="white-color">
+                    Белый
+                  </label>
+                </li>
+                <li class="form__item-check">
+                  <input class="visually-hidden" type="checkbox" name="grey-color" id="grey-color" checked>
+                  <label class="form__label" for="grey-color">
+                    Серый
+                  </label>
+                </li>
+                <li class="form__item-check">
+                  <input class="visually-hidden" type="checkbox" name="tiffany-color" id="tiffany-color">
+                  <label class="form__label" for="tiffany-color">
+                    «Тиффани»
+                  </label>
+                </li>
+                <li class="form__item-check">
+                  <input class="visually-hidden" type="checkbox" name="black-color" id="black-color">
+                  <label class="form__label" for="black-color">
+                    Черный
+                  </label>
+                </li>
+                <li class="form__item-check">
+                  <input class="visually-hidden" type="checkbox" name="pink-color" id="pink-color">
+                  <label class="form__label" for="pink-color">
+                    Розовый
+                  </label>
+                </li>
+                <li class="form__item-check">
+                  <input class="visually-hidden" type="checkbox" name="orange-color" id="orange-color">
+                  <label class="form__label" for="orange-color">
+                    Оранжевый
+                  </label>
+                </li>
+                </ul>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="filters__fieldset">
-            <legend class="filters__title filters__title--write">
-              ФИО
-            </legend>
-            <ul class="filters__list">
-              <li class="filters__item-write">
-                <label class="filters__label" for="name-client">
+          <fieldset class="form__fieldset">
+            <div class="form__wrapper-fieldset">
+              <legend class="form__title form__title--write">
+                ФИО
+              </legend>
+              <ul class="form__list">
+              <li class="form__item-write">
+                <label class="form__label" for="name-client">
                   Имя:
                 </label>
                 <br>
-                <input class="filters-placeholder filters-placeholder--name" type="text" id="name-client" placeholder="Введите ваше имя" required>
+                <input class="form__placeholder form__placeholder--name" type="text" id="name-client" placeholder="Введите ваше имя*" required>
                 </li>
-              <li class="filters__item-write">
-                <label class="filters__label" for="surname-client">
+              <li class="form__item-write">
+                <label class="form__label" for="surname-client">
                   Фамилия:
                 </label>
                 <br>
-                <input class="filters-placeholder filters-placeholder--name" type="text" id="surname-client" placeholder="Укажите фамилию" required>
+                <input class="form__placeholder form__placeholder--name" type="text" id="surname-client" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="filters__item-write">
-                <label class="filters__label" for="patronymic-client">
+              <li class="form__item-write">
+                <label class="form__label" for="patronymic-client">
                   Отчество:
                 </label>
                 <br>
-                <input class="filters-placeholder filters-placeholder--name" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
+                <input class="form__placeholder form__placeholder--name" type="text" id="patronymic-client" placeholder="Отчество, если желаете">
               </li>
-            </ul>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="filters__fieldset filters__fieldset--write">
-            <label class="filters__title filters__title--write" for="tel-client">
-              Тел
-            </label>
-            <br>
-            <input class="filters-placeholder" type="tel" id="tel-client" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ" required>
+          <fieldset class="form__fieldset form__fieldset--write">
+            <div class="form__wrapper-grey">
+              <div class="form__wrapper-fieldset">
+                <label class="form__title form__title--write" for="tel-client">
+                  Тел
+                </label>
+                <br>
+                <input class="form__placeholder form__placeholder--grey" type="tel" id="tel-client" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ*" required>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="filters__fieldset filters__fieldset--write">
-            <label class="filters__title filters__title--write" for="email-client">
-              E-mail
-            </label>
-            <br>
-            <input class="filters-placeholder" type="email" id="email-client" placeholder="Ваш Email" required>
+          <fieldset class="form__fieldset form__fieldset--write">
+            <div class="form__wrapper-grey">
+              <div class="form__wrapper-fieldset">
+                <label class="form__title form__title--write" for="email-client">
+                  E-mail
+                </label>
+                <br>
+                <input class="form__placeholder form__placeholder--grey" type="email" id="email-client" placeholder="Ваш Email*" required>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="filters__fieldset filters__fieldset--write">
-            <label class="filters__title filters__title--write" for="text-order-wishes">
-              Доп
-            </label>
-            <br>
-            <textarea class="filters__textarea" id="text-order-wishes">
-              Опишите все ваши пожелания к заказу
-            </textarea>
+          <fieldset class="form__fieldset form__fieldset--write">
+            <div class="form__wrapper-fieldset">
+              <label class="form__title form__title--write" for="text-order-wishes">
+                Доп
+              </label>
+              <br>
+              <textarea class="form__textarea" id="text-order-wishes">
+                Опишите все ваши пожелания к заказу
+              </textarea>
+            </div>
           </fieldset>
-          <span class="form-order__notes">
-            Поля обязательны для заполнения
-          </span>
-          <input class="button filters__button" type="submit" value="Отправить заказ">
+          <div class="form__submit-wrapper">
+            <span class="form-order__notes">
+              <sup>*</sup>Поля обязательны для заполнения
+            </span>
+            <input class="button form__button" type="submit" value="Отправить заказ">
+          </div>
         </form>
       </section>
     </main>

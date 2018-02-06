@@ -1,0 +1,15 @@
+.title-week {
+  color: $light-mint;
+  text-transform: uppercase;
+
+  @include bold-1720;
+}
+
+@media (min-width: 768px) {
+  .title-week {
+    width: 90px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+}

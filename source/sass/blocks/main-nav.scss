@@ -1,11 +1,139 @@
 .main-nav {
-  // временно до перестройки на планшет
-  display: none;
-  height: 316px;
-
-  @include padding-line;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // дальше этой длины не тянется, ломается:(
+  max-width: 1478px;
 }
 
 .main-nav__toggle {
   @include reset-button;
+}
+
+.main-nav__list {
+  width: 100%;
+}
+
+.main-nav__logo-link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  padding-left: calc((100% - 86px) / 2);
+
+  border-bottom: 1px solid $border;
+}
+
+.main-nav__cart,
+.main-nav__cart-amount {
+  font-size: 17px;
+  color: $black;
+  text-decoration: none;
+
+  @include font-bold;
+}
+
+.main-nav__cart {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 24%;
+
+  border-bottom: 1px solid $border;
+}
+
+.main-nav__delivery {
+  display: none;
+  padding: 17px 50px 10px 10px;
+
+  color: $grey;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__services {
+    position: relative;
+
+    order: 4;
+    margin-bottom: -103px;
+  }
+
+  .main-nav__delivery {
+    position: relative;
+
+    display: block;
+    order: 5;
+    margin-bottom: -103px;
+  }
+
+  .main-nav__logo-link {
+    order: 1;
+    // временно до замены логотипа, потом задать отступы
+    width: 371px;
+    height: 89px;
+    padding-left: 50px;
+
+    border-right: 1px solid $border;
+  }
+
+  .main-nav__cart {
+    order: 3;
+    width: 190px;
+    padding: 32px 50px 32px 10%;
+
+    text-align: right;
+  }
+
+  .main-nav__search {
+    flex-grow: 1;
+    order: 2;
+    // временно до замены
+    height: 89px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__services {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .main-nav__logo-link {
+    flex-grow: 1;
+    order: 2;
+    width: 200px;
+  }
+
+  .main-nav__search {
+    flex-grow: 0;
+    order: 3;
+    width: 81px;
+  }
+
+  .main-nav__cart {
+    order: 4;
+    margin-right: 50px;
+    padding: 32px 50px 32px 80px;
+  }
+
+  .main-nav__news {
+    position: relative;
+
+    order: 5;
+    margin-bottom: -103px;
+  }
+
+  .main-nav__delivery {
+    position: relative;
+
+    order: 6;
+    margin: 0;
+    margin-bottom: -103px;
+    padding: 17px 100px 10px 10px;
+  }
 }
