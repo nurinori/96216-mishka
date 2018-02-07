@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  // дальше этой длины не тянется, ломается:(
-  max-width: 1478px;
+  max-width: 1150px;
 }
 
 .main-nav__toggle {

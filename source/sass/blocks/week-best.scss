@@ -7,7 +7,7 @@
 }
 
 .week-best__main-title {
-  margin: 0 0 25px 0;
+  margin: 0 0 23px 0;
 }
 
 .week-best__title {
@@ -21,20 +21,30 @@
 
 .week-best__description {
   width: 260px;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 
 .week-best__table {
   width: 260px;
   height: 110px;
-  margin: 0 0 34px 0;
+  margin: 0 0 28px 0;
 
-  line-height: 30px;
+  border-collapse: collapse;
+  line-height: 20px;
 }
 
-.week-best__table-tr {
-  // не работает
+.week-best__table-feature,
+.week-best__table-value{
+  height: 39px;
   border-bottom: 1px solid $border;
+}
+
+.week-best__table-feature {
+  padding: 0 15px 0 0;
+}
+
+.week-best__table-value {
+  padding: 0;
 }
 
 .week-best__pic {
@@ -42,8 +52,8 @@
 }
 
 .week-best__price {
-  margin-top: 27px;
-  margin-bottom: 27px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   font-size: 17px;
   line-height: 24px;

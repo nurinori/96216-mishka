@@ -1,5 +1,5 @@
 .company-contacts__address {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .company-contacts__title {
@@ -11,7 +11,7 @@
 
 .company-contacts__table {
   width: 260px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 34px auto;
   padding: 0;
 
   line-height: 30px;
@@ -20,13 +20,14 @@
 
 .company-contacts__td-left {
   width: 77px;
+  padding: 0;
 
   vertical-align: top;
 }
 
 .company-contacts__td-right-top {
   width: 183px;
-  padding-bottom: 32px;
+  padding: 0 0 28px 0;
 
   vertical-align: top;
 }
