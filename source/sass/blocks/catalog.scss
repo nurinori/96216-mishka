@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 260px;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 0 auto;
 
   @include padding-mobile;
 }
@@ -14,7 +14,7 @@
 @media (min-width: 768px) {
   .catalog {
     width: 668px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     @include padding-main;
   }

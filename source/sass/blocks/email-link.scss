@@ -1,4 +1,15 @@
 .email-link {
   color: $grey;
   text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

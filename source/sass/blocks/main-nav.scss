@@ -30,6 +30,15 @@
   text-decoration: none;
 
   @include font-bold;
+
+  &:hover,
+  &:focus {
+    color: rgba(1, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(1, 0, 0, 0.3);
+  }
 }
 
 .main-nav__cart {
@@ -117,7 +126,7 @@
   .main-nav__cart {
     order: 4;
     margin-right: 50px;
-    padding: 32px 50px 32px 80px;
+    padding: 32px 0 32px 80px;
   }
 
   .main-nav__news {
@@ -133,6 +142,5 @@
     order: 6;
     margin: 0;
     margin-bottom: -103px;
-    padding: 17px 100px 10px 10px;
   }
 }
