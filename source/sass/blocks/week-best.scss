@@ -7,7 +7,7 @@
 }
 
 .week-best__main-title {
-  margin: 0 0 25px 0;
+  margin: 0 0 23px 0;
 }
 
 .week-best__title {
@@ -21,20 +21,31 @@
 
 .week-best__description {
   width: 260px;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 
 .week-best__table {
   width: 260px;
-  height: 110px;
-  margin: 0 0 34px 0;
+  // height: 110px;
+  margin: 0 0 28px 0;
 
-  line-height: 30px;
+  border-collapse: collapse;
+  line-height: 20px;
 }
 
-.week-best__table-tr {
-  // не работает
+.week-best__table-feature,
+.week-best__table-value {
+  height: 39px;
+
   border-bottom: 1px solid $border;
+}
+
+.week-best__table-feature {
+  padding: 0 15px 0 0;
+}
+
+.week-best__table-value {
+  padding: 0;
 }
 
 .week-best__pic {
@@ -42,8 +53,7 @@
 }
 
 .week-best__price {
-  margin-top: 27px;
-  margin-bottom: 27px;
+  margin: 25px 0 25px 0;
 
   font-size: 17px;
   line-height: 24px;
@@ -68,25 +78,35 @@
   .week-best__main-title {
     align-self: center;
     margin: 0 0 0 50px;
-    padding-right: 20px;
+    padding-right: 18px;
   }
 
   .week-best__description {
     width: 290px;
+    margin-bottom: 35px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
+  .week-best__table {
+    width: 290px;
+  }
+
+  .week-best__table-feature {
+    padding: 0;
+  }
+
   .week-best__pic {
     width: 334px;
     height: 404px;
-    margin: -250px 0 0 334px;
+    margin: -266px 0 0 334px;
   }
 
   .week-best__price {
     font-size: 20px;
     line-height: 24px;
+    margin: 17px 0 32px 0;
   }
 }
 
@@ -97,7 +117,7 @@
 
   .week-best__title {
     margin: 0;
-    padding-top: 55px;
+    padding-top: 54px;
 
     font-size: 53px;
     line-height: 57px;
@@ -106,11 +126,12 @@
   .week-best__main-title {
     margin-right: 25px;
     margin-left: 36px;
-    padding-top: 55px;
+    padding-top: 59px;
   }
 
   .week-best__description {
     margin-left: 175px;
+    margin-bottom: 50px;
   }
 
   .week-best__table {
@@ -120,7 +141,7 @@
   .week-best__pic {
     width: 525px;
     height: 636px;
-    margin-top: -410px;
+    margin-top: -445px;
     margin-left: 525px;
   }
 }

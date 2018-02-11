@@ -6,7 +6,7 @@
 }
 
 .reviews__wrapper {
-  margin: 0 auto 39px auto;
+  margin: 0 auto 38px auto;
 }
 
 .reviews__title {
@@ -16,14 +16,14 @@
 
 .reviews__text {
   margin: 0;
-  padding: 0 0 30px 0;
+  padding: 0 0 27px 0;
 
   line-height: 30px;
 }
 
 .reviews__author {
   display: inline-block;
-  padding: 0 0 7px 0;
+  padding: 0 0 4px 0;
 
   font-size: 17px;
   color: $black;
@@ -32,8 +32,10 @@
 }
 
 .reviews__link {
-  padding: 0 0 30px 0;
+  padding: 0 0 28px 0;
 
+  font-size: 17px;
+  line-height: 30px;
   font-style: normal;
 }
 
@@ -49,9 +51,6 @@
     width: 768px;
     margin-bottom: 86px;
     padding: 0;
-    // временно, чтобы видеть сетку
-
-    background-color: yellow;
   }
 
   .reviews__title {
@@ -64,7 +63,7 @@
 
   .reviews__text {
     width: 668px;
-    padding-bottom: 50px;
+    padding-bottom: 56px;
 
     font-size: 17px;
   }
@@ -85,8 +84,8 @@
 
   .reviews__button {
     order: 2;
-    width: 178px;
-    margin-top: 77px;
+    width: 175px;
+    margin-top: 79px;
     margin-right: 50px;
   }
 }
@@ -97,20 +96,26 @@
   }
 
   .reviews__title {
+    margin-top: 70px;
     margin-left: 175px;
   }
 
   .reviews__text {
     width: 780px;
+    padding-bottom: 40px;
   }
 
   .reviews__wrapper {
     width: 875px;
-    margin-bottom: 100px;
+    margin-bottom: 94px;
     margin-left: 175px;
   }
 
   .reviews__button {
     margin-right: 0;
+  }
+
+  .reviews__author {
+    font-size: 17px;
   }
 }

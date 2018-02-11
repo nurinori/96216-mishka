@@ -1,6 +1,7 @@
 .product-menu {
   display: flex;
   flex-direction: column;
+  max-width: 1050px;
   margin-bottom: 28px;
 }
 
@@ -23,24 +24,45 @@
 @media (min-width: 768px) {
   .product-menu {
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 
     @include padding-main;
   }
 
   .product-menu__item {
     width: 50%;
-    margin-top: -119px;
+    margin-top: -115px;
     padding: 28px 0 30px 37px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &:hover,
+    &:focus {
+      margin-top: -120px;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .product-menu {
     margin: 0 auto 70px auto;
-    max-width: 1478px;
+  }
+
+  .product-menu__item {
+    margin-top: -119px;
+
+    &:hover,
+    &:focus {
+      margin-top: -124px;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

@@ -1,5 +1,5 @@
 .company-contacts__address {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .company-contacts__title {
@@ -11,7 +11,7 @@
 
 .company-contacts__table {
   width: 260px;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 34px auto;
   padding: 0;
 
   line-height: 30px;
@@ -20,13 +20,14 @@
 
 .company-contacts__td-left {
   width: 77px;
+  padding: 0;
 
   vertical-align: top;
 }
 
 .company-contacts__td-right-top {
   width: 183px;
-  padding-bottom: 32px;
+  padding: 0 0 28px 0;
 
   vertical-align: top;
 }
@@ -53,13 +54,13 @@
 
 @media (min-width: 768px) {
   .company-contacts__title {
-    margin-left: 7%;
-    padding-top: 60px;
-    padding-bottom: 43px;
+    margin-left: 6%;
+    padding-top: 56px;
+    padding-bottom: 46px;
   }
 
   .company-contacts__table {
-    margin: 0 7% 50px 7%;
+    margin: 0 6% 50px 6%;
   }
 
   .company-contacts__table tbody {
@@ -72,7 +73,7 @@
   }
 
   .company-contacts__address {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 
     font-size: 17px;
     line-height: 30px;
@@ -80,7 +81,6 @@
 
   .company-contacts__button {
     width: 230px;
-    height: 50px;
     margin-bottom: 55px;
   }
 }
@@ -95,16 +95,21 @@
     position: relative;
 
     margin-left: 175px;
-    padding-top: 130px;
+    padding-top: 145px;
+    padding-bottom: 43px;
   }
 
   .company-contacts__table {
-    margin-left: 175px;
+    margin-left: 170px;
   }
 
   .company-contacts__table tbody {
     display: table;
     width: 350px;
+  }
+
+  .company-contacts__td-left {
+    width: 70px;
   }
 
   .company-contacts__map {
@@ -115,6 +120,6 @@
   }
 
   .company-contacts__button {
-    margin: -100px 0 0 175px;
+    margin: -96px 0 0 175px;
   }
 }

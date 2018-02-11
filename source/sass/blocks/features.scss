@@ -1,6 +1,6 @@
 .features {
   width: 260px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 29px auto;
 
   @include padding-mobile;
 }
@@ -15,7 +15,7 @@
 
 .features__title {
   margin: 0;
-  padding: 28px 0 28px 0;
+  padding: 28px 0 29px 0;
 }
 
 .features__item {
@@ -25,13 +25,13 @@
 @media (min-width: 768px) {
   .features {
     width: 668px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 
     @include padding-main;
   }
 
   .features__title {
-    padding: 50px 0 26px 0;
+    padding: 48px 0 26px 0;
   }
 
   .features__list {
@@ -70,12 +70,17 @@
 
 @media (min-width: 1150px) {
   .features {
-    width: 600px;
+    width: 700px;
     padding-right: 275px;
     padding-left: 275px;
+    margin-bottom: 54px;
+  }
+
+  .features__title {
+    padding: 54px 0 26px 0;
   }
 
   .features__list {
-    width: 600px;
+    width: 700px;
   }
 }

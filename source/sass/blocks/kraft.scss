@@ -10,7 +10,7 @@
 
 .kraft__title {
   margin: 0;
-  padding: 23px 30px 20px 90px;
+  padding: 23px 30px 24px 90px;
 
   font-size: 17px;
   color: $black;
@@ -22,22 +22,23 @@
 }
 
 .kraft__wrapper {
-  padding-top: 25px;
+  padding-top: 27px;
 
   border: 1px solid $milk;
   border-top: 0;
 }
 
 .kraft__description {
-  margin: 0 0 24px 35px;
+  max-width: 188px;
+  margin: 0 0 25px 35px;
   padding: 0;
 
   font-size: 13px;
 }
 
 .kraft__link {
-  width: 190px;
-  margin: 0 0 35px 35px;
+  width: 192px;
+  margin: 0 33px 32px 33px;
 }
 
 @media (min-width: 768px) {
@@ -48,29 +49,36 @@
   }
 
   .kraft__title {
+    padding: 38px 30px 24px 105px;
+
     font-size: 20px;
   }
 
   .kraft__video {
     order: -1;
     width: 668px;
-    height: 458px;
+    height: 456px;
 
     background-color: green;
   }
 
   .kraft__description {
-    margin: 0 0 45px 0;
+    max-width: 586px;
+    margin: 0 0 34px 0;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .kraft__wrapper {
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-top: 9px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .kraft__link {
     width: 585px;
-    margin: 0 auto 47px auto;
+    margin: 0 auto 45px auto;
   }
 }
 
@@ -80,36 +88,48 @@
   }
 
   .kraft__inner {
-    width: 331px;
-    margin-left: 700px;
-    padding-left: 18px;
+    width: 368px;
+    margin-left: 682px;
 
     border: 1px solid $milk;
-    border-left: 0;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .kraft__video {
     order: 0;
     width: 681px;
     height: 455px;
-    margin-top: -144px;
-    margin-left: -700px;
+    margin-top: -145px;
+    margin-left: -681px;
   }
 
   .kraft__title {
-    padding: 95px 130px 0 62px;
+    padding: 97px 60px 0 77px;
 
     border: 0;
   }
 
   .kraft__wrapper {
     margin-top: -295px;
-    padding: 25px 60px 0 60px;
+    padding: 16px 0 0 77px;
 
     border: 0;
   }
 
+  .kraft__description {
+    max-width: 230px;
+  }
+
   .kraft__link {
     width: 228px;
+    margin: 44px 0 60px 0;
   }
 }
