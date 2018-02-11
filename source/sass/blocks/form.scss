@@ -1,37 +1,62 @@
 .form__fieldset {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
   border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $light-mint;
+  }
 }
 
 .form__title {
   position: relative;
 
-  display: block;
+  display: inline-block;
   margin: 0;
   padding-top: 12px;
+  padding-right: 25px;
   padding-bottom: 22px;
-  // width: 80px;
 
   font-size: 17px;
   line-height: 17px;
+  // vertical-align: top;
   color: $light-mint;
   text-transform: uppercase;
 
+  background-color: #ffffff;
+
   @include font-bold;
 
-  // &::before {
-  // content: "";
-  // position: absolute;
-  // top: 20px;
-  // right: -100px;
+  &--color {
+    padding-right: 18px;
+  }
 
-  // width: 100%;
-  // height: 1px;
+  &--name {
+    padding-right: 20px;
+  }
 
-  // background-color: $light-mint;
-  // }
+  &--tel {
+    padding-right: 29px;
+  }
+
+  &--email {
+    padding-right: 23px;
+  }
+
+  &--textarea {
+    padding-right: 22px;
+  }
 }
 
 .form__list {
@@ -62,14 +87,14 @@
 }
 
 .form__input-text::placeholder {
-  color: rgba (68, 68, 68, 0.3);
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .form__textarea {
   box-sizing: border-box;
   width: 260px;
   min-height: 142px;
-  margin-top: 7px;
+  margin-top: 2px;
   padding-top: 14px;
   padding-left: 14px;
   overflow: auto;
@@ -87,7 +112,25 @@
 }
 
 .form__textarea::placeholder {
-  color: rgba (68, 68, 68, 0.3);
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__wrapper-contacts:last-of-type {
+  position: relative;
+
+  margin-bottom: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $light-mint;
+  }
 }
 
 .form__submit-wrapper {
@@ -225,6 +268,10 @@
 
     @include padding-main;
 
+    &::before {
+      display: none;
+    }
+
     &--contacts {
       flex-direction: column;
       padding-bottom: 33px;
@@ -237,6 +284,14 @@
 
   .form__wrapper-contacts {
     display: flex;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   .form__submit-wrapper {
@@ -251,6 +306,14 @@
     width: 167px;
     margin: 0;
     padding-top: 27px;
+    padding-right: 0;
+
+    background-color: transparent;
+
+    &--tel,
+    &--email {
+      margin-right: 46px;
+    }
   }
 
   .form__list {
@@ -265,7 +328,7 @@
   }
 
   .form__input-text {
-    width: 75%;
+    flex-grow: 1;
     padding-top: 23px;
     padding-bottom: 10px;
     padding-left: 17px;
@@ -371,10 +434,11 @@
     box-sizing: border-box;
     width: 175px;
     padding-left: 63px;
-  }
 
-  .form__input-text {
-    width: 90%;
+    &--tel,
+    &--email {
+      margin-right: 26px;
+    }
   }
 
   .form__submit-wrapper {
