@@ -1,8 +1,24 @@
 .features {
+  position: relative;
+
   width: 260px;
   margin: 0 auto 29px auto;
 
   @include padding-mobile;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 8px 0;
+    background-size: 320px 7px;
+  }
 }
 
 .features__list {
@@ -19,7 +35,100 @@
 }
 
 .features__item {
+  position: relative;
+
   padding: 57px 0 26px 0;
+
+
+  &--flower {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 8px;
+
+      width: 32px;
+      height: 37px;
+
+      background-image: url("../img/icon-feature-flower.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--money {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+
+      width: 46px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-money.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--heart {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 8px;
+
+      width: 33px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-heart.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--clew {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 3px;
+
+      width: 34px;
+      height: 34px;
+
+      background-image: url("../img/icon-feature-ball.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--rocket {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -6px;
+
+      width: 54px;
+      height: 23px;
+
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--present {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 3px;
+
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../img/icon-feature-gift.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -28,6 +137,15 @@
     margin-bottom: 46px;
 
     @include padding-main;
+
+    &::before {
+      top: -18px;
+
+      height: 16px;
+
+      background-position: 19px 0;
+      background-size: 768px 16px;
+    }
   }
 
   .features__title {
@@ -44,26 +162,56 @@
 
     &--flower {
       order: 1;
+
+      &::before {
+        top: 23px;
+        left: 9px;
+      }
     }
 
     &--money {
       order: 3;
+
+      &::before {
+        top: 23px;
+        left: 1px;
+      }
     }
 
     &--heart {
       order: 5;
+
+      &::before {
+        top: 27px;
+        left: 8px;
+      }
     }
 
     &--clew {
       order: 2;
+
+      &::before {
+        top: 26px;
+        left: 3px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      &::before {
+        top: 26px;
+        left: -5px;
+      }
     }
 
     &--present {
       order: 5;
+
+      &::before {
+        top: 23px;
+        left: 3px;
+      }
     }
   }
 }
@@ -71,9 +219,20 @@
 @media (min-width: 1150px) {
   .features {
     width: 700px;
+    margin-bottom: 54px;
     padding-right: 225px;
     padding-left: 225px;
-    margin-bottom: 54px;
+
+    &::before {
+      top: -26px;
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-position: 29px 0;
+      background-size: 1050px 23px;
+    }
   }
 
   .features__title {

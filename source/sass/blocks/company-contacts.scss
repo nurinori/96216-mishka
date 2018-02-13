@@ -54,9 +54,24 @@
 
 @media (min-width: 768px) {
   .company-contacts__title {
+    position: relative;
+
     margin-left: 6%;
     padding-top: 56px;
     padding-bottom: 46px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 41px;
+      right: -414px;
+
+      width: 51px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .company-contacts__table {
@@ -97,6 +112,14 @@
     margin-left: 175px;
     padding-top: 145px;
     padding-bottom: 43px;
+
+    &::after {
+      top: 136px;
+      right: 320px;
+
+      width: 51px;
+      height: 81px;
+    }
   }
 
   .company-contacts__table {

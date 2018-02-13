@@ -1,8 +1,24 @@
 .reviews {
+  position: relative;
+
   width: 260px;
   margin: 0 auto 49px auto;
 
   @include padding-mobile;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 623px;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 8px 0;
+    background-size: 320px 7px;
+  }
 }
 
 .reviews__wrapper {
@@ -57,9 +73,18 @@
     background-position: center left;
 
     @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
+    }
+
+    &::before {
+      top: 525px;
+
+      height: 16px;
+
+      background-position: 19px 0;
+      background-size: 768px 16px;
     }
   }
 
@@ -103,6 +128,14 @@
 @media (min-width: 1150px) {
   .reviews {
     width: 1050px;
+
+    &::before {
+      width: 1050px;
+      height: 23px;
+
+      background-position: 29px 0;
+      background-size: 1050px 23px;
+    }
   }
 
   .reviews__title {
