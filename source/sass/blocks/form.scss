@@ -78,12 +78,20 @@
 
   font-size: 17px;
   line-height: 18px;
+  color: $grey;
 
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
 
   @include font;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid #62d1ba;
+    outline: none;
+  }
 }
 
 .form__input-text::placeholder {
@@ -109,6 +117,13 @@
   resize: none;
 
   @include font;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid #62d1ba;
+    outline: none;
+  }
 }
 
 .form__textarea::placeholder {

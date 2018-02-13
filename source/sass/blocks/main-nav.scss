@@ -21,6 +21,11 @@
   padding-left: calc((100% - 86px) / 2);
 
   border-bottom: 1px solid $border;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 .main-nav__cart {
@@ -34,16 +39,24 @@
   &:focus {
     color: rgba(1, 0, 0, 0.6);
 
+    outline: none;
+
     .main-nav__cart-amount {
       color: rgba(1, 0, 0, 0.6);
+
+      outline: none;
     }
   }
 
   &:active {
     color: rgba(1, 0, 0, 0.3);
 
+    outline: none;
+
     .main-nav__cart-amount {
       color: rgba(1, 0, 0, 0.3);
+
+      outline: none;
     }
   }
 }

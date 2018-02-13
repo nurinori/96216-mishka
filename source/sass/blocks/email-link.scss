@@ -7,9 +7,11 @@
   &:focus {
     color: #46c1ae;
     border-bottom: 1px solid #46c1ae;
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
+    outline: none;
   }
 }
