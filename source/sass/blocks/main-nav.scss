@@ -21,6 +21,7 @@
   padding-left: calc((100% - 86px) / 2);
 
   border-bottom: 1px solid $border;
+
   &:hover,
   &:focus,
   &:active {
@@ -164,8 +165,8 @@
 
   .main-nav__cart {
     order: 4;
-    margin-right: 50px;
-    padding: 32px 0 32px 80px;
+    margin-right: 0;
+    padding: 32px 50px 32px 80px;
   }
 
   .main-nav__news {

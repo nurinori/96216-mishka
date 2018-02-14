@@ -1,45 +1,140 @@
 .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: calc((100% - 320px)/2);
+  z-index: 100;
+
   width: 260px;
 
   background-color: $white;
-  outline: 1px solid $border-modal;
+  border-top: 1px solid $border-modal;
+  border-bottom: 1px solid $border-modal;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 
+  displa: flex;
   @include padding-mobile;
 }
 
 .modal__title {
-  margin: 37px 54px 25px 37px;
-  padding: 0;
-}
+  display: block;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 14px;
 
-// переделать класс
-.modal-form__text {
-  @include reset-indents;
-}
-
-.modal__title,
-.modal__label {
   font-size: 25px;
   line-height: 30px;
+  text-align: center;
   color: $black;
   text-transform: uppercase;
 
   @include font-bold;
 }
 
-.modal-form__list {
-  @include reset-ul;
+.modal__form-text {
+  margin: 0 0 26px 0;
+  padding: 0;
+
+  text-align: center;
 }
 
-.modal-button {
+.modal__form-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0;
+  padding: 0 0 31px 0;
+
+  list-style: none;
+}
+
+
+
+.modal__item {
+  display: flex;
+}
+
+.modal__label {
+  width: 78px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 2px solid $border;
+  cursor: pointer;
+
+  @include font-bold;
+}
+
+
+.modal__button {
+  width: 260px;
+  margin-bottom: 46px;
 
   font-size: 17px;
   line-height: 16px;
+  text-align: center;
   color: $white;
   text-transform: uppercase;
 
   background-color: $light-mint;
+  border-width: 0;
+  border-style: none;
 
-  @include reset-button;
   @include font-bold;
+}
+
+.modal__input:hover ~ .modal__label,
+.modal__input:focus ~ .modal__label {
+  border: 2px solid $border-modal;
+}
+
+.modal__input:checked ~ .modal__label {
+  border: 2px solid $light-mint;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc((100% - 567px) / 2);
+    top: 25vh;
+
+    box-sizing: border-box;
+    width: 568px;
+    padding: 0;
+
+    border: 1px solid #c6c6c6;
+  }
+
+  .modal__title {
+    padding-top: 33px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__form-text {
+    margin-bottom: 21px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal__form-list {
+    width: 352px;
+    margin: 0 auto;
+  }
+
+  .modal__label {
+    width: 110px;
+  }
+
+  .modal__button {
+    width: 352px;
+    margin: 0 auto  46px auto;
+  }
 }
