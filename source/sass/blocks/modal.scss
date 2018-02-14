@@ -1,10 +1,10 @@
 .modal {
-  display: none;
   position: fixed;
   top: 0;
-  left: calc((100% - 320px)/2);
+  left: calc((100% - 320px) / 2);
   z-index: 100;
 
+  display: none;
   width: 260px;
 
   background-color: $white;
@@ -13,6 +13,7 @@
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 
   displa: flex;
+
   @include padding-mobile;
 }
 
@@ -49,8 +50,6 @@
   list-style: none;
 }
 
-
-
 .modal__item {
   display: flex;
 }
@@ -70,7 +69,6 @@
 
   @include font-bold;
 }
-
 
 .modal__button {
   width: 260px;
@@ -100,8 +98,8 @@
 
 @media (min-width: 768px) {
   .modal {
-    left: calc((100% - 567px) / 2);
     top: 25vh;
+    left: calc((100% - 567px) / 2);
 
     box-sizing: border-box;
     width: 568px;
