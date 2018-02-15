@@ -64,7 +64,7 @@
         </a>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--index">
       <section class="product-menu">
         <h1 class="visually-hidden">
           Меню товаров
@@ -118,6 +118,9 @@
             </table>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="week-best__pic" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
@@ -176,12 +179,12 @@
             </address>
           </blockquote>
           <p class="slider__buttons">
-            <button class="slider__button" type ="button">
+            <button class="slider__button slider__button--left" type ="button">
               <span class="visually-hidden">
                 Листать влево
               </span>
             </button>
-            <button class="slider__button" type ="button">
+            <button class="slider__button slider__button--right" type ="button">
               <span class="visually-hidden">
                 Листать вправо
               </span>
@@ -268,31 +271,34 @@
       <h2 class="modal__title">
         Добавить в&#160;корзину
       </h2>
-      <form class="modal-form">
-        <p class="modal-form__text">
+      <form class="modal__form">
+        <p class="modal__form-text">
           Выберите размер:
         </p>
-        <ul class="modal-form__list">
-          <li class="modal-form__item">
+        <ul class="modal__form-list">
+          <li class="modal__item">
+
+            <input class="visually-hidden modal__input" type="radio" name="size" value="s-size" id="s-size" checked>
             <label class="modal__label" for="s-size">
               s
             </label>
-            <input type="radio" name="size" value="s-size" id="s-size">
           </li>
-          <li class="modal-form__item">
+          <li class="modal__item">
+
+            <input class="visually-hidden modal__input" type="radio" name="size" value="m-size" id="m-size">
             <label class="modal__label" for="m-size">
               m
             </label>
-            <input type="radio" name="size" value="m-size" id="m-size">
           </li>
-          <li class="modal-form__item">
+          <li class="modal__item">
             <label class="modal__label" for="l-size">
               l
             </label>
-            <input class="" type="radio" name="size" value="l-size" id="l-size">
+            <input class="visually-hidden modal__input" type="radio" name="size" value="l-size" id="l-size">
+
           </li>
         </ul>
-        <button class="modal-button button" type="submit">
+        <button class="modal__button button" type="submit">
           Добавить
         </button>
       </form>

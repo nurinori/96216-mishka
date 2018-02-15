@@ -17,10 +17,12 @@
 .search-form input:hover::placeholder,
 .search-form input:focus::placeholder {
   color: rgba(1, 0, 0, 0.6);
+  outline: none;
 }
 
 .search-form input:active::placeholder {
   color: rgba(1, 0, 0, 0.3);
+  outline: none;
 }
 
 .search-form__input-text {

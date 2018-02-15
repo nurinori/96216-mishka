@@ -9,6 +9,8 @@
 }
 
 .kraft__title {
+  position: relative;
+
   margin: 0;
   padding: 23px 30px 24px 90px;
 
@@ -19,6 +21,19 @@
   border-bottom: 0;
 
   @include font-bold;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 33px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .kraft__wrapper {
@@ -52,6 +67,11 @@
     padding: 38px 30px 24px 105px;
 
     font-size: 20px;
+
+    &::after {
+      top: 32px;
+      left: 41px;
+    }
   }
 
   .kraft__video {
@@ -93,10 +113,12 @@
 
     &:hover,
     &:focus {
+      outline: none;
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
 
     &:active {
+      outline: none;
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     }
   }
@@ -113,6 +135,11 @@
     padding: 97px 60px 0 77px;
 
     border: 0;
+
+    &::after {
+      top: 41px;
+      left: 81px;
+    }
   }
 
   .kraft__wrapper {

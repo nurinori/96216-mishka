@@ -25,10 +25,12 @@
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
+    outline: none;
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+    outline: none;
   }
 }
 
@@ -71,10 +73,12 @@
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    outline: none;
   }
 
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    outline: none;
   }
 }
 

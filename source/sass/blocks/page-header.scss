@@ -30,6 +30,8 @@
 
 @media (min-width: 768px) {
   .page-header {
+    position: relative;
+
     box-sizing: border-box;
 
     border: 0;
@@ -55,7 +57,7 @@
 @media (min-width: 1150px) {
   .page-header {
     &--catalog {
-      margin-bottom: 143px;
+      margin-bottom: 132px;
     }
   }
 
