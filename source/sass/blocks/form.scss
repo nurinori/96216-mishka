@@ -95,18 +95,6 @@
   border-bottom: 2px solid #000000;
 
   @include font;
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-bottom: 2px solid #62d1ba;
-    outline: none;
-
-    .form__icon-phone,
-    .form__icon-mail {
-      fill: #62d1ba;
-    }
-  }
 }
 
 .form__input-text::placeholder {
@@ -147,6 +135,20 @@
 
 .form__wrapper-contacts {
   position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    .form__input-text {
+      border-bottom: 2px solid #62d1ba;
+      outline: none;
+    }
+
+    .form__icon-phone,
+    .form__icon-mail {
+      fill: #62d1ba;
+    }
+  }
 }
 
 .form__wrapper-contacts:last-of-type {

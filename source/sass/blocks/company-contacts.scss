@@ -32,21 +32,16 @@
   vertical-align: top;
 }
 
-.company-contacts__map-img {
-  position: absolute;
-  z-index: 1;
-
-  margin: 0;
-}
-
 .company-contacts__map {
   position: relative;
+  top: 0;
 
   &::after {
     content: "";
     position: absolute;
     top: 144px;
     left: 139px;
+    z-index: 50;
 
     width: 66px;
     height: 101px;
@@ -55,7 +50,16 @@
   }
 }
 
+.company-contacts__map-img {
+  position: absolute;
+  top: 0;
+
+  margin: 0;
+}
+
 .company-contacts__iframe {
+  position: relative;
+  top: 0;
   z-index: 2;
 
   width: 100%;

@@ -18,13 +18,13 @@
 
   @include font-bold;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba(1, 0, 0, 0.6);
     outline: none;
   }
 
-  &:active {
+  &[href]:active {
     color: rgba(1, 0, 0, 0.3);
     outline: none;
   }
