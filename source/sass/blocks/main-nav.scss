@@ -20,14 +20,24 @@
 
   border-bottom: 1px solid $border;
 
-  &:hover,
-  &:focus,
-  &:active {
+  &[href]:hover,
+  &[href]:focus,
+  &[href]:active {
     outline: none;
+    cursor: pointer;
   }
 }
 
+.main-nav__icon-cart {
+  bottom: 30px;
+  left: 9%;
+
+  @include icon;
+}
+
 .main-nav__cart {
+  position: relative;
+
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 24%;
@@ -51,6 +61,10 @@
 
       outline: none;
     }
+
+    .main-nav__icon-cart {
+      fill: $light-mint;
+    }
   }
 
   &:active {
@@ -62,6 +76,10 @@
       color: rgba(1, 0, 0, 0.3);
 
       outline: none;
+    }
+
+    .main-nav__icon-cart {
+      fill: rgba(99, 209, 187, 0.3);
     }
   }
 }
@@ -80,6 +98,38 @@
 
   color: $grey;
   text-decoration: none;
+}
+
+.main-nav__icon-search {
+  bottom: 28px;
+  left: 9%;
+
+  @include icon;
+}
+
+.main-nav__search {
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: rgba(1, 0, 0, 0.6);
+
+    outline: none;
+
+    .main-nav__icon-search {
+      fill: $light-mint;
+    }
+  }
+
+  &:active {
+    color: rgba(1, 0, 0, 0.3);
+
+    outline: none;
+
+    .main-nav__icon-search {
+      fill: rgba(99, 209, 187, 0.3);
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -136,6 +186,7 @@
         box-shadow: none;
         transform: rotate(45deg);
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -189,6 +240,16 @@
     padding-left: 50px;
 
     border-right: 1px solid $border;
+    cursor: pointer;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__logo-img {
@@ -207,8 +268,17 @@
   .main-nav__search {
     flex-grow: 1;
     order: 2;
-    // временно до замены
     height: 89px;
+  }
+
+  .main-nav__icon-search {
+    bottom: 33px;
+    left: 31px;
+  }
+
+  .main-nav__icon-cart {
+    bottom: 35px;
+    left: 34px;
   }
 
   .main-nav__toggle {
@@ -245,7 +315,12 @@
   .main-nav__cart {
     order: 4;
     margin-right: 0;
-    padding: 32px 50px 32px 80px;
+    padding: 31px 52px 32px 74px;
+  }
+
+  .main-nav__icon-cart {
+    bottom: 34px;
+    left: 32px;
   }
 
   .main-nav__news {

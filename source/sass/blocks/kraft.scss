@@ -1,6 +1,6 @@
 .kraft {
   width: 260px;
-  margin: 0 auto 55px auto;
+  margin: 0 auto 58px auto;
 }
 
 .kraft__inner {
@@ -12,7 +12,7 @@
   position: relative;
 
   margin: 0;
-  padding: 23px 30px 24px 90px;
+  padding: 23px 30px 25px 90px;
 
   font-size: 17px;
   color: $black;
@@ -33,6 +33,33 @@
 
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.kraft__video {
+  position: relative;
+}
+
+.kraft__icon-play {
+  position: absolute;
+  top: 38px;
+  left: 80px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+
+    opaciity: 0.3;
   }
 }
 
@@ -59,6 +86,7 @@
 @media (min-width: 768px) {
   .kraft {
     width: 668px;
+    margin-bottom: 63px;
 
     @include padding-main;
   }
@@ -77,19 +105,24 @@
   .kraft__video {
     order: -1;
     width: 668px;
-    height: 456px;
+    height: 455px;
+  }
+
+  .kraft__icon-play {
+    top: 190px;
+    left: 285px;
   }
 
   .kraft__description {
     max-width: 586px;
-    margin: 0 0 34px 0;
+    margin: 0 0 35px 0;
 
     font-size: 15px;
     line-height: 30px;
   }
 
   .kraft__wrapper {
-    padding-top: 9px;
+    padding-top: 7px;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -103,6 +136,7 @@
 @media (min-width: 1150px) {
   .kraft {
     width: 1050px;
+    margin-bottom: 105px;
   }
 
   .kraft__inner {
@@ -126,13 +160,17 @@
   .kraft__video {
     order: 0;
     width: 681px;
-    height: 455px;
-    margin-top: -145px;
-    margin-left: -681px;
+    height: 456px;
+    margin-top: -146px;
+    margin-left: -682px;
+  }
+
+  .kraft__icon-play {
+    left: 290px;
   }
 
   .kraft__title {
-    padding: 97px 60px 0 77px;
+    padding: 96px 60px 0 77px;
 
     border: 0;
 
@@ -143,7 +181,7 @@
   }
 
   .kraft__wrapper {
-    margin-top: -295px;
+    margin-top: -294px;
     padding: 16px 0 0 77px;
 
     border: 0;
@@ -155,6 +193,6 @@
 
   .kraft__link {
     width: 228px;
-    margin: 44px 0 60px 0;
+    margin: 46px 0 60px 0;
   }
 }

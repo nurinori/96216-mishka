@@ -70,6 +70,16 @@
   }
 }
 
+.form__icon-phone,
+.form__icon-mail {
+  position: absolute;
+  top: 49px;
+  left: 87%;
+  z-index: 10;
+
+  fill: rgba(0, 0, 0, 0.2);
+}
+
 .form__input-text {
   width: 100%;
   margin-bottom: 16px;
@@ -91,6 +101,11 @@
   &:active {
     border-bottom: 2px solid #62d1ba;
     outline: none;
+
+    .form__icon-phone,
+    .form__icon-mail {
+      fill: #62d1ba;
+    }
   }
 }
 
@@ -130,9 +145,11 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form__wrapper-contacts:last-of-type {
+.form__wrapper-contacts {
   position: relative;
+}
 
+.form__wrapper-contacts:last-of-type {
   margin-bottom: 5px;
 
   &::before {
@@ -154,7 +171,7 @@
 }
 
 .form__button {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 
   background-color: $white;
 }
@@ -272,7 +289,6 @@
 
   border: 0;
 }
-
 // TABLET START
 
 @media (min-width: 768px) {
@@ -360,6 +376,7 @@
 
   .form__button {
     width: 230px;
+    margin-bottom: 50px;
   }
 
   .form__item-write {
@@ -425,6 +442,12 @@
     width: 28px;
     height: 14px;
   }
+
+  .form__icon-phone,
+  .form__icon-mail {
+    top: 20px;
+    left: 92%;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -473,5 +496,11 @@
 
   .form__wrapper-contacts {
     width: 875px;
+  }
+
+  .form__icon-phone,
+  .form__icon-mail {
+    top: 18px;
+    left: 96%;
   }
 }

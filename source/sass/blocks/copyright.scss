@@ -1,7 +1,53 @@
-.copyright__text {
+.copyright {
+  padding-top: 16px;
+  padding-bottom: 19px;
+  width: 260px;
+  box-sizing: border-box;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  padding-left: 38px;
+
   font-size: 19px;
   line-height: 19px;
   color: $black;
+  text-decoration: none;
 
   @include font-bold;
+
+  &:hover,
+  &:focus {
+    .copyright__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    .copyright__icon {
+      fill: rgba(70, 193, 174, 0.3);
+    }
+  }
+}
+
+.copyright__icon {
+  margin-left: 22px;
+
+  fill: $light-mint;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    padding-top: 19px;
+    width: 185px;
+  }
+
+  .copyright__link {
+    width: 185px;
+    padding: 0;
+    justify-content: flex-end;
+  }
 }

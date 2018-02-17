@@ -95,3 +95,11 @@
 
   @include bold-1720;
 }
+
+@mixin icon {
+  position: absolute;
+
+  cursor: pointer;
+
+  fill: #d8d7d7;
+}

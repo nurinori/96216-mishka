@@ -103,9 +103,10 @@
   }
 
   .week-best__price {
+    margin: 17px 0 32px 0;
+
     font-size: 20px;
     line-height: 24px;
-    margin: 17px 0 32px 0;
   }
 }
 
@@ -129,8 +130,8 @@
   }
 
   .week-best__description {
-    margin-left: 175px;
     margin-bottom: 50px;
+    margin-left: 175px;
   }
 
   .week-best__table {
@@ -142,5 +143,9 @@
     height: 636px;
     margin-top: -445px;
     margin-left: 525px;
+  }
+
+  .week-best__price {
+    margin-bottom: 34px;
   }
 }

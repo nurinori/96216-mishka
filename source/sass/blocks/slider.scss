@@ -1,4 +1,5 @@
 .slider__buttons {
+  display: flex;
   height: 50px;
 
   border: 1px solid $milk;
@@ -7,7 +8,40 @@
 }
 
 .slider__button {
-  @include reset-button;
+  position: relative;
+
+  width: 129px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  border-width: 0;
+  border-style: none;
+  border-right: 1px solid $milk;
+
+  &:nth-of-type(2) {
+    border-right: 0;
+  }
+}
+
+.slider__icon {
+  position: absolute;
+  top: 11px;
+  right: 42px;
+
+  cursor: pointer;
+
+  fill: #000000;
+
+  &:hover,
+  &:focus {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: 768px) {
@@ -16,10 +50,34 @@
     margin-top: -80px;
     margin-left: 500px;
   }
+
+  .slider__icon {
+    top: 9px;
+    right: 22px;
+
+    &--right {
+      right: 19px;
+    }
+  }
 }
 
 @media (min-width: 1150px) {
   .slider__buttons {
     margin-left: 700px;
+
+    border: 0;
+  }
+
+  .slider__button {
+    border: 0;
+  }
+
+  .slider__icon {
+    top: 8px;
+    right: 15px;
+
+    &--right {
+      right: 11px;
+    }
   }
 }

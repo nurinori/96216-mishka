@@ -17,11 +17,13 @@
 .search-form input:hover::placeholder,
 .search-form input:focus::placeholder {
   color: rgba(1, 0, 0, 0.6);
+
   outline: none;
 }
 
 .search-form input:active::placeholder {
   color: rgba(1, 0, 0, 0.3);
+
   outline: none;
 }
 
@@ -35,14 +37,21 @@
 @media (min-width: 768px) {
   .search-form {
     box-sizing: border-box;
-    // временно до замены
     width: 10%;
     padding-left: 0;
 
     border-right: 1px solid $border;
   }
 
-  .search-form [placeholder] {
+  .search-form__input-text[placeholder] {
     display: none;
+  }
+
+  .search-form__link {
+    width: 20px;
+    height: 34px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: block;
   }
 }
