@@ -34,6 +34,7 @@
 
 .company-contacts__map {
   position: relative;
+  min-height: 462px;
   top: 0;
 
   &::after {
@@ -51,18 +52,14 @@
 }
 
 .company-contacts__map-img {
-  position: absolute;
-  top: 0;
-
   margin: 0;
-  z-index: 1;
 }
 
 .company-contacts__map-wrapper {
-  position: relative;
+  position: absolute;
   top: 0;
 
-  margin: 0;
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -103,6 +100,8 @@
   }
 
   .company-contacts__map {
+    min-height: 466px;
+
     &::after {
       top: 138px;
       left: 364px;
